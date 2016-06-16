@@ -1,0 +1,130 @@
+
+@import "reset.css";
+@import "grid.css";
+
+
+
+.bodyClass {
+	font: 14px/18px  Arial, Helvetica, sans-serif;
+	color:#826660;
+	position:relative;
+	min-width:960px;
+	padding-top: 27px;
+      background: rgba(231, 120, 2, 0.74);
+
+}
+
+
+
+/*links*/
+
+.bodyClass a {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+.bodyClass a:hover {
+	color: #699440;
+}
+
+.bodyClass a.btn {
+	font-size: 12px;
+	display: inline-block;
+	background: #e2827e;
+	padding: 5px 14px 4px;
+	border-radius: 4px;
+	margin-top: 17px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.bodyClass a.btn:hover {
+	background: #699440;
+}
+
+.bodyClass a.btn.m1 {
+	margin-top: 30px;
+	margin-bottom: 1px;
+}
+
+
+
+.img_inner {
+	max-width: 100%;
+	padding: 7px;
+	background: #fff ;
+	 -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -o-box-sizing: border-box;
+ box-sizing: border-box;
+ border: 1px solid #e6e4e4;
+ margin-bottom: 19px;
+ box-shadow: 2px 2px 4px #ddd;
+}
+
+
+
+
+
+.clear {
+	float: none !important;
+	clear: both;
+}
+
+/*header*/
+
+.header {
+/* 	display: block; */
+	padding-top: 10px;
+	position: relative;
+	z-index: 999; 
+	background: #f2f0f0 ;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dddbdb;
+	box-shadow: 0 1px 5px #ccc;
+}
+
+
+/* .header h1 { */
+/* 	float: none; */
+/* 	position: relative; */
+/* 	z-index: 999; */
+
+/* } */
+/* .header h1 a { */
+/* /* 	display: block; */ */
+/* /* 	overflow: hidden; */ */
+/* 	margin: 0 auto; */
+/* 	width: 240px; */
+/* 	float: left; */
+/* 	height: 75px; */
+/* 	text-indent: -999px; */
+/* 	transition: 0s ease; */
+/* 	-o-transition: 0s ease; */
+/* 	-webkit-transition: 0s ease; */
+/* } */
+
+
+.main {
+	background: #f2f0f0;
+}
+
+
+/************Footer***********/
+
+/* footer { */
+/* 	display: block; */
+/* 	padding: 45px 0; */
+/* 	font-size: 12px; */
+/* 	color: #fff; */
+/* 	text-align: center; */
+/* } */
+
+/* footer a:hover { */
+/* 	color: #fff; */
+/* 	text-decoration: underline; */
+/* } */

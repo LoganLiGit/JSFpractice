@@ -1,0 +1,3402 @@
+@charset "utf-8";
+
+#BLeft {
+	width:960px;
+	height:auto;
+	z-index:1;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.mc-content{
+	width: 1200px;
+	    margin: 0 auto;
+  
+}
+#BRight {
+	width:240px;
+	height:auto;
+	z-index:3;
+	float: right;
+	top: 0px;
+}
+.mc-content h1 {
+	width: 100%;
+    padding: 0 5px 0 0;
+    font-size: 20px;
+    color: #BF0000;
+    display: inline-block;
+}
+
+/*.OrderArea {
+	width:960px;
+	height:auto;
+	z-index:4;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	overflow: hidden;
+}
+.OrderNavi {
+	width:960px;
+	height:38px;
+	z-index:4;
+	background-image: url(Bphase1_background.png);
+	background-repeat: no-repeat;
+}
+#MyOrderTitle {
+	width:147px;
+	height:32px;
+	z-index:4;
+	background-image: url(Bphase_naviG1.png);
+	background-repeat: no-repeat;
+	float: left;
+	margin-right:3px;
+	text-align: center;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 5px;
+}
+.MyOrderTitle {
+	width:147px;
+	height:32px;
+	margin-right:3px;
+	z-index:4;
+	background-image: url(Bphase_navi1.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.MyOrderTitle:hover {
+	background-image: url(Bphase_naviHov1.png);
+	background-repeat: no-repeat;
+}
+#MyBonusTitle {
+	width:147px;
+	height:38px;
+	margin-right:3px;
+	z-index:4;
+	background-image: url(Bphase_naviG2.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.MyBonusTitle {
+	width:147px;
+	height:32px;
+	margin-right:3px;
+	z-index:4;
+	background-image: url(Bphase_navi2.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.MyBonusTitle:hover {
+	background-image: url(Bphase_naviHov2.png);
+	background-repeat: no-repeat;
+}
+#MyAccountTitle {
+	width:147px;
+	height:38px;
+	margin-right:3px;
+	z-index:4;
+	background-image: url(Bphase_naviG3.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.MyAccountTitle {
+	width:147px;
+	height:32px;
+	z-index:4;
+	margin-right:3px;
+	background-image: url(Bphase_navi3.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.MyAccountTitle:hover {
+	background-image: url(Bphase_naviHov3.png);
+	background-repeat: no-repeat;
+}
+#MyCustomerServiceTitle {
+	width:147px;
+	height:38px;
+	margin-right:3px;
+	z-index:4;
+	background-image: url(Bphase_naviG4.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.MyCustomerServiceTitle {
+	width:147px;
+	height:32px;
+	z-index:4;
+	margin-right:3px;
+	background-image: url(Bphase_navi4.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.MyCustomerServiceTitle:hover {
+	background-image: url(Bphase_naviHov4.png);
+	background-repeat: no-repeat;
+}
+
+#MyCashCouponsTitle {
+	width:147px;
+	height:38px;
+	margin-right:3px;
+	z-index:4;
+	background-image: url(Bphase_naviG5.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.MyCashCouponsTitle {
+	width:147px;
+	height:32px;
+	z-index:4;
+	margin-right:3px;
+	background-image: url(Bphase_navi5.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.MyCashCouponsTitle:hover {
+	background-image: url(Bphase_naviHov5.png);
+	background-repeat: no-repeat;
+}
+
+
+#MyPasswordChangeTitle {
+	width:147px;
+	height:38px;
+	margin-right:3px;
+	z-index:4;
+	background-image: url(Bphase_naviG6.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.MyPasswordChangeTitle {
+	width:147px;
+	height:32px;
+	z-index:4;
+	margin-right:3px;
+	background-image: url(Bphase_navi6.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.MyPasswordChangeTitle:hover {
+	background-image: url(Bphase_naviHov6.png);
+	background-repeat: no-repeat;
+}
+*/
+.OrderContent {
+	width:960px;
+	height:auto;
+	z-index:4;
+	background-image: url(Bphase1_CONTENT.jpg);
+	background-repeat: repeat;
+	float: left;
+	padding-bottom: 15px;
+}
+.OrderButtom {
+	width:960px;
+	height:3px;
+	z-index:4;
+	background-image: url(Bphase1_Buttom.png);
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+	float: left;
+	_display:inline;
+}
+#OrderCategories {
+	width:480px;
+	height:30px;
+	z-index:1;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 0px;
+	margin-top: 24px;
+}
+#OrderCategories td {
+	font-size:16px;
+	padding: 1px;
+}
+#OrderCategories a:link{text-decoration: none;color: #000;}
+#OrderCategories a:visited{text-decoration: none;color: #333;}
+#OrderCategories a:hover{text-decoration: underline;color: #000;}
+#OrderCategories a:active{color: #000;text-decoration: none;}
+
+#OrderPDFarea {
+	width:auto;
+	height:auto;
+	z-index:1;
+	float: left;
+	margin-bottom: 5px;
+	text-align: center;
+}
+#OrderSavearea {
+	height:auto;
+	float: left;
+	padding-top: 10px;
+	font-size: 16px;
+	width:58%;
+}
+#mc-table {
+	height:auto;
+	margin: 0px auto;
+	text-align: center;
+	border: 1px solid #999;
+	clear: both;	
+}
+#mc-table > table { border: 1px solid #FFF; }
+#mc-table th {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color:#FFF;
+	background-color: #444444;
+}
+.order-table-title { width: 100%; height: 30px; margin-top: 30px; color: #FFF; background: #333; }
+.order-table-title h1 { margin-left: 10px; font-size: 16px; line-height: 30px; color: #FFF; }
+.order-table-title a,
+.order-table-title a:link,
+.order-table-title a:hover,
+.order-table-title a:active,
+.order-table-title a:visited { 
+	float: right; 
+	padding-right: 10px; 
+	font-size: 13px;
+	text-decoration: underline;
+	color: #FF9;
+}
+
+.order-table-title-invoice { width: 100%; height: 30px; margin-top: 30px; color: #FFF; background: #333; }
+.order-table-title-invoice h1 { margin-left: 10px; font-size: 16px; line-height: 30px; color: #FFF; }
+
+#mc-table.order-detail th {
+	color:#333;
+	background-color: #CDCDCD;
+	padding: 5px;
+}
+#mc-table.order-detail td {
+	padding: 5px;
+}
+#mc-table p.info { margin: 10px; }
+#mc-table tr {
+	line-height:25px;
+}
+#mc-table td {
+	padding:1px;
+	font-size:13px;
+	text-align:center;
+}
+#mc-table .text-left { text-align: left; }
+#mc-table .text-right { text-align: right; }
+#mc-table tr:nth-child(even) { background-color: #eee; }
+#mc-table.order-detail tr:nth-child(even) { background-color: #eee; }
+.mc-tableContentITEM {
+	border-collapse:separate;
+}
+.mc-tableContentITEM td {
+	text-align: center;
+	border-bottom: 1px solid #F2F2F0;
+}
+.mc-tableContentITEM .OrderSerial input[type="submit"] { padding: 1px 5px; font-size: 11px; }
+#mc-tableContentTitleLeft {
+	height:auto;
+	text-align: left;
+	font-size: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 6px;
+}
+#mc-tableContentTitleLeft img {
+	float: left;
+	height: 59px;
+	width: 103px;
+}
+#mc-tableContentTitleRight {
+	height: 23px;
+	margin: 0px auto 6px auto;
+	text-align: left;
+	font-size: 12;
+	color:#666;
+	clear: both;
+}
+
+
+#RightSave {
+	width:240px;
+	height:auto;
+	z-index:1;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 28px;
+}
+#RightSaveTop {
+	width:240px;
+	height:22px;
+	z-index:1;
+	background-image: url(OrderSaveTOP.jpg);
+	background-repeat: no-repeat;
+}
+#RightSaveContent {
+	width:240px;
+	height:auto;
+	z-index:1;
+	background-image: url(OrderSaveContent.jpg);
+	background-repeat: repeat;
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+}
+#RightSaveButtom {
+	width:240px;
+	height:17px;
+	z-index:1;
+	background-image: url(OrderSaveButtom.jpg);
+	background-repeat: no-repeat;
+}
+#OrderFAQ {
+	width:240px;
+	height:auto;
+	z-index:1;
+}
+#OrderFAQTop {
+	width:240px;
+	height:39px;
+	z-index:1;
+	background-image: url(OrderFAQTOP.jpg);
+	background-repeat: no-repeat;
+}
+#OrderFAQContent {
+	width:220px;
+	height:auto;
+	z-index:1;
+	background-image: url(OrderSaveContent.jpg);
+	background-repeat: repeat;
+	font-size: 18px;
+	color: #333;
+	padding: 10px;
+}
+#OrderFAQButtom {
+	width:240px;
+	height:17px;
+	z-index:1;
+	background-image: url(OrderSaveButtom.jpg);
+	background-repeat: no-repeat;
+}
+#OrderB3Title {
+	width:450px;
+	height:30px;
+	z-index:1;
+	background-image: url(B3-1Title.jpg);
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: 45px;
+	line-height: 30px;
+	float: left;
+}
+#OrderB3TitleLink {
+	width:410px;
+	height:25px;
+	z-index:1;
+	float: right;
+	margin-top: 14px;
+	line-height: 25px;
+}
+#OrderB3TitleLink a:link{text-decoration: none;color: #F60;font-weight: bold;}
+#OrderB3TitleLink a:visited{text-decoration: none;color: #F60;font-weight: bold;}
+#OrderB3TitleLink a:hover{text-decoration: underline;color: #F60;}
+#OrderB3TitleLink a:active{
+	text-decoration: none;
+	color: #F60;
+	font-weight: bold;
+}
+
+#OrderB3Contentarea {
+	width:860px;
+	height:auto;
+	z-index:1;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	clear: both;
+}
+#OrderB3ContentTop {
+	width:860px;
+	height:30px;
+	z-index:1;
+	background-image: url(B3-1STop.jpg);
+}
+#OrderB3Content {
+	width:838px;
+	height:auto;
+	z-index:1;
+	font-weight: bold;
+	color: #000;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	background-color: #FFF;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #bf0000;
+	border-left-color: #bf0000;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #bf0000;
+}
+
+/*#OrderB3Content a:link{text-decoration: none;color: #000;font-weight: bold;}
+#OrderB3Content a:visited{text-decoration: none;color: #000;font-weight: bold;}
+#OrderB3Content a:hover{text-decoration: underline;color: #000;}
+#OrderB3Content a:active{text-decoration: none;color: #000;font-weight: bold;}*/
+
+
+#OrderB3inner ul {
+}
+#OrderB3inner li {
+	list-style-type: none;
+	letter-spacing: -2px;
+}
+#OrderB3inner li a {
+	text-decoration:none;
+	list-style-type: none;
+	color: #000;
+}
+#OrderB3inner li a span {
+	visibility:visible;
+	display:block;
+	position:absolute;
+	/**adjust disjointed text position in % or px**/ 
+    left:46%;
+	top:306px;
+	list-style-type: none;
+}
+#OrderB3inner li a:hover span, #rollover li a:active span, #rollover li a:focus span {
+	visibility:visible;
+	background-image: url(B3-1ContentLittle.jpg);
+	background-repeat: no-repeat;
+	width: 335px;
+	height: 35px;
+}
+#OrderB3inner li a:hover, #rollover li a:focus{
+	text-decoration: none;
+	color:#333;
+	visibility:visible;
+	list-style-type: none;
+}
+
+
+#OrderB3inner2 ul {
+}
+#OrderB3inner2 li {
+	list-style-type: none;
+	padding-top: 5px;
+}
+#OrderB3inner2 li a {
+	text-decoration:none;
+	list-style-type: none;
+	color: #000;
+}
+#OrderB3inner2 li a span {
+	visibility:visible;
+	display:block;
+	position:absolute;
+	/**adjust disjointed text position in % or px**/ 
+    left:38%;
+	top:334px;
+	list-style-type: none;
+}
+#OrderB3inner2 li a:hover span, #rollover li a:active span, #rollover li a:focus span {
+	visibility:visible;
+	background-image: url(B3-1ContentLittle2.jpg);
+	background-repeat: no-repeat;
+	width: 295px;
+	height: 35px;
+}
+#OrderB3inner2 li a:hover, #rollover li a:focus{
+	text-decoration: none;
+	color:#333;
+	visibility:visible;
+	list-style-type: none;
+}
+
+
+#OrderB3inner3 ul {
+}
+#OrderB3inner3 li {
+	list-style-type: none;
+	padding-top: 5px;
+}
+#OrderB3inner3 li a {
+	text-decoration:none;
+	list-style-type: none;
+	color: #000;
+}
+#OrderB3inner3 li a span {
+	visibility:visible;
+	display:block;
+	position:absolute;
+	/**adjust disjointed text position in % or px**/ 
+    left:39.5%;
+	top:363px;
+	list-style-type: none;
+}
+#OrderB3inner3 li a:hover span, #rollover li a:active span, #rollover li a:focus span {
+	visibility:visible;
+	background-image: url(B3-1ContentLittle3.jpg);
+	background-repeat: no-repeat;
+	width: 288px;
+	height: 35px;
+}
+#OrderB3inner3 li a:hover, #rollover li a:focus{
+	text-decoration: none;
+	color:#333;
+	visibility:visible;
+	list-style-type: none;
+}
+#OrderB3ContentButtom {
+	width:785px;
+	height:18px;
+	z-index:1;
+	background-image: url(B3-1SButtom.jpg);
+	background-repeat: no-repeat;
+}
+.OrderB317LifePcash  {
+	width:300px;
+	height:35px;
+	z-index:4;
+	background-image: url();
+	background-repeat: no-repeat;
+	display: block;
+	float: right;
+	padding-right: 190px;
+}
+.OrderB317LifePcash:hover {
+	background-image: url(B3-1ContentLittle.jpg);
+	background-repeat: no-repeat;
+}
+
+#OrderB3Table1 {
+	width:858px;
+	height:auto;
+	z-index:1;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border: 1px solid #999;
+}
+#OrderB3Table1 td {
+	padding: 3px;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #999;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999;
+}
+.OrderB3TableThead{
+	border-collapse:separate;
+	background-color: #CCC;
+	text-align: center;
+	font-weight: bold;
+	color: #000;
+}
+.OrderB3TableTitle {
+	width:auto;
+	height:auto;
+	z-index:1;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif, "Arial Unicode MS", "Adobe 黑体 Std R";
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+	background-color: #444444;
+}
+.OrderB3TableTitle img {
+	position: relative;
+	top: 3px;
+}
+.SmallPagination{
+	padding-left:13px;
+	width:600px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+.SmallPagination td{
+	font-size: 13px;
+	text-align: center;
+}
+.SmallPagination select{
+	margin-right: auto;
+	margin-left: auto;
+	height: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#OrderB3Table2 {
+	width:858px;
+	height:auto;
+	z-index:1;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border: 1px solid #999;
+}
+#OrderB3Table2 td {
+	padding: 3px;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #999;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999;
+}
+#OrderB3Table3 {
+	width:858px;
+	height:auto;
+	z-index:1;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border: 1px solid #999;
+}
+#OrderB3Table3 td {
+	padding: 3px;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #999;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999;
+}
+
+/*B5*/
+#OrderB5BuyItem {
+	width:860px;
+	height:auto;
+	z-index:1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+#OrderB5BuyIteminner {
+	width:860px;
+	height:auto;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border-collapse: separate;
+	border: 1px solid #CDCDCD;
+}
+#OrderB5BuyIteminner tr{
+	line-height: 20px;
+}
+#OrderB5BuyIteminner td {
+	text-align: justify;
+	padding: 4px;
+}
+.OrderB5BuyItemthead{
+	background-color: #444444;
+	font-weight: bold;
+	color: #FFF;
+}
+.OrderB5BuyItemTitlename{
+	color:#000;
+	font-family:verdana;
+	font-weight:bold;
+	font-size:15px;
+  }
+.OrderB5BuyItemPrice{
+  color:#FF0000;
+  font-family:verdana;
+  font-weight:bold;
+  }
+.OrderB5ITEM{
+	border-collapse:separate;
+}
+.OrderB5ITEM td{
+	text-align: center;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #666;
+}
+#OrderB5BuyItemAccounts {
+	width:860px;
+	height:auto;
+	z-index:1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border: 1px solid #cdcdcd;
+}
+#OrderB5BuyItemAccounts td {
+	letter-spacing: 2px;
+	text-align: right;
+}
+.OrderB5Accounts{
+	border-collapse:separate;
+}
+.OrderB5Accounts td{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CDCDCD;
+}
+.OrderB5S_Total{
+	font-size: 22px;
+	color: #F00;
+	font-weight: bold;
+	text-align: center;
+}
+.OrderB5_Ship{
+	font-size: 22px;
+	color: #000;
+	font-weight: bold;
+	text-align: right;
+}
+
+/*OrderB5Information*/
+#OrderB5Information {
+	width:860px;
+	height:auto;
+	z-index:1;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	clear: both;
+}
+#OrderB5InformationTop {
+	width:860px;
+	height:30px;
+	z-index:1;
+	background-image: url(B5-1STop.jpg);
+}
+#OrderB5InformationContent {
+	width:auto;
+	height:auto;
+	z-index:1;
+	font-weight: bold;
+	color: #000;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #bf0000;
+	border-bottom-color: #bf0000;
+	border-left-color: #bf0000;
+	background-color: #FFF;
+}
+#OrderB5InformationButtom {
+	width:800px;
+	height:18px;
+	z-index:1;
+	background-image: url(B5-1SButtom.jpg);
+	background-repeat: no-repeat;
+}
+/*OrderB5Information*/
+
+#OrderB5InformationPayDetailTable {
+	width:220px;
+	height:auto;
+	text-align: right;
+
+}
+#OrderB5InformationPayDetailTable td {
+	font-weight: normal;
+}
+
+/*B5Address*/
+#OrderB5AddressInformation {
+	width:860px;
+	height:auto;
+	z-index:1;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	clear: both;
+}
+#OrderB5AddressInformationTop {
+	width:860px;
+	height:30px;
+	z-index:1;
+	background-image: url(B5-2STop.jpg);
+}
+#OrderB5AddressInformationContent {
+	width:838px;
+	height:auto;
+	z-index:1;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	background-color: #FFF;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #bf0000;
+	border-bottom-color: #bf0000;
+	border-left-color: #bf0000;
+}
+#OrderB5AddressInformationContent ul{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+#OrderB5AddressInformationContent li{
+	font-weight: bold;
+	color: #000;
+	font-size: 14px;
+}
+#OrderB5AddressInformationButtom {
+	width:800px;
+	height:18px;
+	z-index:1;
+	background-image: url(B5-1SButtom.jpg);
+	background-repeat: no-repeat;
+}
+/*B5AddressEnd*/
+
+#OrderB5Invoice {
+	width:860px;
+	height:auto;
+	z-index:1;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	clear: both;
+}
+#OrderB5InvoiceTop {
+	width:860px;
+	height:30px;
+	z-index:1;
+	background-image: url(B5-3STop.jpg);
+}
+#OrderB5InvoiceContent {
+	width:838px;
+	height:auto;
+	z-index:1;
+	font-weight: bold;
+	color: #666;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #bf0000;
+	border-bottom-color: #bf0000;
+	border-left-color: #bf0000;
+	background-color: #FFF;
+}
+#OrderB5InvoiceButtom {
+	width:800px;
+	height:18px;
+	z-index:1;
+	background-image: url(B5-1SButtom.jpg);
+	background-repeat: no-repeat;
+}
+#OrderB5Invoice a:link{text-decoration: none;color: #333;text-decoration:none;}
+#OrderB5Invoice a:visited{text-decoration: none;color:#333;text-decoration:none;}
+#OrderB5Invoice a:hover{text-decoration: none;color: #333;text-decoration:underline;}
+#OrderB5Invoice a:active{text-decoration: none;color: #333;text-decoration:none;}
+
+.B5Invoiceinformation {
+	width:600px;
+	height:auto;
+	z-index:1;
+	font-weight: normal;
+	color: #000;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 14px;
+}
+.B5Invoiceinformation ul {
+	list-style-type: none;
+}
+.B5Invoiceinformation li{
+	margin-top: 2px;
+	margin-bottom: 5px;
+}
+
+
+
+#OrderB5Inav {
+	width:860px;
+	height:auto;
+	z-index:1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#OrderB5Inav  a:link{text-decoration: none;color: #bf0000;text-decoration:none;font-weight: bold;}
+#OrderB5Inav  a:visited{text-decoration: none;color:#bf0000;text-decoration:none;font-weight: bold;}
+#OrderB5Inav  a:hover{text-decoration: none;color: #bf0000;text-decoration:underline;font-weight: bold;}
+#OrderB5Inav  a:active{text-decoration: none;color: #bf0000;text-decoration:none;font-weight: bold;}
+
+#OrderB5Number {
+	width:860px;
+	height:auto;
+	z-index:1;
+	font-size: 18px;
+	color: #999;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	font-weight: bold;
+	padding-top: 5px;
+}
+#OrderB5Title {
+	width:860px;
+	height:auto;
+	z-index:1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	font-size: 20px;
+	font-weight: bold;
+	color: #000;
+}
+#OrderB5Btnarea {
+	width:860px;
+	height:55px;
+	z-index:1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 10px;
+}
+
+/*好康訂單憑證按鈕的四種狀態*/
+.OrderB5BtnCase1 {
+	width:150px;
+	height:57px;
+	display: block;
+	text-indent: -9999px;
+	z-index:1;
+	float: left;
+	margin-left:205px;
+	background-image: url(CaseBtn_01.jpg);
+	_display:inline;
+}
+.OrderB5BtnCase1:hover {
+	background-image: url(CaseBtn_01Hov.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+.OrderB5BtnCase2 {
+	width:147px;
+	height:55px;
+	display: block;
+	text-indent: -9999px;
+	z-index:1;
+	float: left;
+	margin-left:205px;
+	_display:inline;
+	background-image: url(CaseBtn_02.jpg);
+	
+}
+.OrderB5BtnCase2:hover {
+	background-image: url(CaseBtn_02Hov.jpg);
+	background-repeat: no-repeat;
+}
+.OrderB5BtnCase3 {
+	width:147px;
+	height:55px;
+	display: block;
+	float: left;
+	text-indent: -9999px;
+	z-index:1;
+	_display:inline;
+	margin-left:205px;
+	background-image: url(CaseBtn_03.jpg);
+}
+.OrderB5BtnCase3:hover {
+	background-image: url(CaseBtn_03Hov.jpg);
+	background-repeat: no-repeat;
+}
+.OrderB5BtnCase4 {
+	width:147px;
+	height:55px;
+	float: left;
+	display: block;
+	text-indent: -9999px;
+	z-index:1;
+	margin-left:205px;
+	_display:inline;
+	background-image: url(CaseBtn_04.jpg);
+}
+.OrderB5BtnCase4:hover {
+	background-image: url(CaseBtn_04Hov.jpg);
+	background-repeat: no-repeat;
+}
+/*好康訂單憑證按鈕的四種狀態End*/
+.OrderB5BtnCaseBefore {
+	width:147px;
+	height:55px;
+	display: block;
+	text-indent: -9999px;
+	z-index:1;
+	float: left;
+	margin-left:205px;
+	background-image: url(CaseBtn_before.jpg);
+	_display:inline;
+}
+.OrderB5BtnCaseBefore:hover {
+	background-image: url(CaseBtn_beforeHov.jpg);
+	background-repeat: no-repeat;	
+}
+.OrderB5BtnBack {
+	width:200px;
+	height:57px;
+	display: block;
+	text-indent: -9999px;
+	z-index:1;
+	background-image: url(CaseBtnBack.jpg);
+	float: right;
+	margin-right: 200px;
+	_display:inline;
+}
+.OrderB5BtnBack:hover {
+	background-image: url(CaseBtnBackHov.jpg);
+	background-repeat: no-repeat;
+}
+
+/*取消訂單狀態1start*/
+#OrderCancel {
+	width:380px;
+	height:325px;
+	z-index:1;
+	background-image: url(OrderB5Case1.png);
+	padding-top: 20px;
+	font-size: 18px;
+	color: #000;
+	padding-left: 20px;
+	padding-right: 15px;
+}
+#OrderCancelCase1Content {
+	width:400px;
+	height:auto;
+	z-index:1;
+	padding-top: 10px;
+}
+#OrderCancelCase1Price {
+	width:200px;
+	height:115px;
+	z-index:1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#OrderCancelCase1Content {
+	width:358px;
+	height:auto;
+	z-index:1;
+	padding-top: 10px;
+	font-family: Arial, Helvetica, sans-serif, "Arial Unicode MS", "Adobe 黑体 Std R";
+	font-size: 16px;
+	line-height: 26px;
+	padding-right: 5px;
+	padding-left: 5px;
+	color: #333;
+}
+#OrderCancelCase1Price {
+	width:260px;
+	height:auto;
+	z-index:1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-color: #DAC4A5;
+	font-size: 18px;
+	line-height: 26px;
+}
+#OrderCancelCase1Price ul {
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+.OrderCancelBtnok {
+	width:94px;
+	height:40px;
+	z-index:1;
+	background-image: url(OrderB5Case1ok.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	margin-left:80px;
+	_display: inline;
+	
+}
+.OrderCancelBtnok:hover {
+	background-image: url(OrderB5Case1okHov.jpg);
+	background-repeat: no-repeat;
+}
+.OrderCancelBtncancel {
+	width:94px;
+	height:40px;
+	z-index:1;
+	background-image: url(OrderB5Case1cancel.jpg);
+	background-repeat: no-repeat;
+	float: right;
+	margin-right:100px;
+	_display: inline;
+}
+.OrderCancelBtncancel:hover {
+	background-image: url(OrderB5Case1cancelHov.jpg);
+	background-repeat: no-repeat;
+}
+.Ordercancelcase1inner {
+	width:200px;
+	height:auto;
+	z-index:1;
+	margin-bottom: 20px;
+	color: #000;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#OrderCancelclose {
+	width:14px;
+	height:11px;
+	z-index:1;
+	left: 403px;
+	top: 50px;
+	font-size: 12px;
+	background-image: url(close.jpg);
+	background-repeat: no-repeat;
+	float: right;
+	margin-right: -13px;
+	margin-top: -17px;
+}
+
+/*取消訂單狀態1End*/
+
+#OrderCancel2 {
+	width:225px;
+	height:215px;
+	z-index:1;
+	background-image: url(OrderB5Case2.jpg);
+	padding-top: 20px;
+	font-size: 16px;
+	color: #000;
+	padding-left: 20px;
+	padding-right: 15px;
+	font-weight: bold;
+}
+#OrderCancelContent2 {
+	width:220px;
+	height:auto;
+	z-index:1;
+	margin-top: 8px;
+	text-align: center;
+	margin-bottom: 0px;
+	line-height: 25px;
+	font-weight: normal;
+}
+#OrderCancelClose {
+	width:280px;
+	height:auto;
+	z-index:1;
+	margin-top: 5px;
+	text-align: left;
+	margin-bottom: 0px;
+	line-height: 25px;
+	font-weight: normal;
+	font-size: 12px;
+	padding-left: 5px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.OrderCancel2Btnok {
+	width:79px;
+	height:31px;
+	z-index:1;
+	background-image: url(OrderB5Case2ok.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	margin-left:18px;
+	_display: inline;
+}
+.OrderCancel2Btnok:hover {
+	background-image: url(OrderB5Case2okHov.jpg);
+	background-repeat: no-repeat;
+}
+.OrderCancel2Btncancel {
+	width:79px;
+	height:31px;
+	z-index:1;
+	background-image: url(OrderB5Case2cancel.png);
+	background-repeat: no-repeat;
+	float: right;
+	_display: inline;
+	margin-right: 30px;
+}
+.OrderCancel2Btncancel:hover {
+	background-image: url(OrderB5Case2cancelHov.png);
+	background-repeat: no-repeat;
+}
+#OrderCancelclose2 {
+	width:16px;
+	height:11px;
+	z-index:1;
+	font-size: 12px;
+	background-image: url(close.jpg);
+	background-repeat: no-repeat;
+	float: right;
+	margin-right: -16px;
+	margin-top: -17px;
+}
+#OrderCancelTitle2 {
+	width:227px;
+	height:auto;
+	z-index:1;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.OrderCancelClose {
+	width:80px;
+	height:29px;
+	z-index:1;
+	background-image: url(Casecancel.png);
+	background-repeat: no-repeat;
+	float:left;
+	margin-left:140px;
+	_display: inline;
+	margin-top:2px;
+	margin-bottom: 0px;
+}
+.OrderCancelClose:hover {
+	background-image: url(CasecancelHov.png);
+	background-repeat: no-repeat;
+}
+#OrderCancelClosearea {
+	width:365px;
+	height:300px;
+	z-index:1;
+	background-image: url(OrderB5CaseClose.jpg);
+	padding-top: 20px;
+	font-size: 16px;
+	color: #000;
+	padding-left: 20px;
+	padding-right: 15px;
+}
+
+.OrderCancelarea {
+	width:365px;
+	height:330px;
+	z-index:1;
+	background-image: url(OrderB5CaseCancel.jpg);
+	padding-top: 20px;
+	font-size: 16px;
+	color: #000;
+	padding-left: 20px;
+	padding-right: 15px;
+}
+
+#B4MyAccount{
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	width: 600px;
+	float: left;
+}
+.B4ablack1{
+	text-align:right;
+	font-family: Arial, Helvetica, sans-serif, "Arial Unicode MS", "Adobe 黑体 Std R";
+	font-size: 16px;
+}
+#B4MyAccount a:link{color:#F00;text-decoration: underline; font-size:12px;font-weight: normal;}
+#B4MyAccount a:visited{color:#F00;text-decoration: none; font-size:12px;font-weight: normal;}
+#B4MyAccount a:hover{color:#F00; text-decoration: underline; font-size:12px;font-weight: normal; }
+#B4MyAccount a:active{color:#F00;text-decoration: none; font-size:12px;font-weight: normal;}
+
+
+.B4ablack2{
+	font-family: Arial, Helvetica, sans-serif, "Arial Unicode MS", "Adobe 黑体 Std R";
+	text-align:left;
+	line-height:30px;
+	font-size: 16px;
+}
+.B4text1{
+	font-size:11.5px;
+	color: #666;
+}
+.B4text2{
+	color:#F00;
+	font-size:18px;
+	font-weight:bold;
+}
+.B4text3{
+	font-size:13px;
+	color: #666;
+}
+
+.B4BtnOK {
+	width:210px;
+	height:50px;
+	z-index:1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: 200px;
+	background-image: url(B4OK.jpg);
+	background-repeat: no-repeat;
+	float: left;
+}
+.B4BtnOK:hover {
+	height:50px;
+	background-image: url(B4OKHov.jpg);
+	background-repeat: no-repeat;
+}
+#B4AddressBtn {
+	width:150px;
+	height:28px;
+	z-index:1;
+	background-image: url(B4AddressBtn.jpg);
+	background-repeat: no-repeat;
+	margin-left: 0px;
+	margin-top: 10px;
+}
+.B4AddressBtn {
+	width:150px;
+	height:28px;
+	z-index:1;
+	background-image: url(B4AddressBtn.jpg);
+	background-repeat: no-repeat;
+	margin-left: 0px;
+	margin-top: 10px;
+}
+.B4MyAddressArea {
+	width:600px;
+	height:auto;
+	z-index:1;
+	border: 1px solid #0F6A96;
+	margin-top: 5px;
+}
+#MyAddress {
+	width:600px;
+	height:auto;
+	z-index:1;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: 25px;
+	float: left;
+}
+#B4AddTitle {
+	width:210px;
+	height:33px;
+	z-index:1;
+	background-image: url(B4AddressTitle.jpg);
+	background-repeat: no-repeat;
+}
+.B4AddressTitle {
+	width:600px;
+	height:auto;
+	z-index:1;
+	font-weight: bold;
+	color: #000;
+    }
+#B4ModifyBtn {
+	width:119px;
+	height:28px;
+	z-index:1;
+	background-image: url(B4AddressBtn_02.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+	margin-left: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.B4ModifyBtn {
+	width:119px;
+	height:28px;
+	z-index:1;
+	background-image: url(B4AddressBtn_02.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+	margin-left: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#B4DeleteBtn {
+	width:80px;
+	height:28px;
+	z-index:1;
+	background-image: url(B4Delete.jpg);
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+.B4DeleteBtn {
+	width:80px;
+	height:28px;
+	z-index:1;
+	background-image: url(B4204.jpg);
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+#B4AddBtn {
+	width:80px;
+	height:28px;
+	z-index:1;
+	background-image: url(B4203.jpg);
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.B4AddBtn {
+	width:80px;
+	height:28px;
+	z-index:1;
+	background-image: url(B4203.jpg);
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+#B4ModifyBtn {
+	width:80px;
+	height:28px;
+	z-index:1;
+	background-image: url(B4201.jpg);
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.B4ModifyBtn {
+	width:80px;
+	height:28px;
+	z-index:1;
+	background-image: url(B4201.jpg);
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#B4CancelBtn {
+	width:80px;
+	height:28px;
+	z-index:1;
+	background-image: url(B4202.jpg);
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+.B4CancelBtn {
+	width:80px;
+	height:28px;
+	z-index:1;
+	background-image: url(B4202.jpg);
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+#AccountLeft {
+	width:620px;
+	height:auto;
+	z-index:2;
+	float: left;
+	padding-left: 25px;
+}
+.FAQArea {
+	width:240px;
+	height:auto;
+	z-index:1;
+	float: right;
+	position: relative;
+	margin-right: 20px;
+}
+#FAQareaTop {
+	width:240px;
+	height:54px;
+	z-index:4;
+	background-image: url(BFAQTitle.jpg);
+	background-repeat: no-repeat;
+}
+#FAQareaContent {
+	width:220px;
+	height:auto;
+	z-index:4;
+	background-image: url(BFAQContent.jpg);
+	background-repeat: repeat;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+#FAQareaContent ul {
+	list-style-type: none;	
+}
+#FAQareaContent li {
+	
+}
+#FAQareaContent li a:link{text-decoration: none;color:#333;}
+#FAQareaContent li a:visited{text-decoration: none;color:#333;}
+#FAQareaContent li a:hover{text-decoration: underline;color:#333;}
+#FAQareaContent li a:active{text-decoration: none;color:#333;}
+
+#FAQareaBottom {
+	width:240px;
+	height:18px;
+	z-index:4;
+	background-image: url(BFAQBottom.jpg);
+	background-repeat: no-repeat;
+}
+
+/*-------------B3W7--------------------*/
+#B3W7Details {
+	width: 750px;
+}
+#B3w7Top {
+	background-image: url(B3-7top.png);
+	height: 77px;
+	width: 750px;
+	background-repeat: no-repeat;
+}
+#B3w7Cen {
+	width: 750px;
+	background-color: #CA6E09;
+}
+#B3w7Bottom {
+	background-image: url(B3-7bottm.png);
+	height: 15px;
+	width: 750px;
+}
+#B3w7Info {
+	background-image: url(B3-7Bg.jpg);
+	background-repeat: repeat;
+	width: 711px;
+	margin-left: 19px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+#B3w7Table{
+	width:660px;
+	margin-right: auto;
+	margin-left: auto;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+}
+#B3w7Table td{
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #999;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.B3w7TableTittle{
+	color: #333;
+	background-color: #D3E2C0;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "微軟正黑體",Arial, Helvetica, sans-serif, "Arial Unicode MS";
+	letter-spacing: 0.2em;
+}
+
+.B3w7TableWhite{
+	font-family: "微軟正黑體",Arial, Helvetica, sans-serif, "Arial Unicode MS";
+	background-color:#FFF;
+	font-size: 14px;
+	letter-spacing: 0.2em;
+	word-spacing: 2em;
+}
+
+.B3w7TableGreen{
+	font-family: "微軟正黑體",Arial, Helvetica, sans-serif, "Arial Unicode MS";
+	background-color:#F7FEEF;
+	letter-spacing: 0.2em;
+	font-size: 14px;
+}
+#B3w7TitInfo {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFF;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding-top: 37px;
+	font-family: "微軟正黑體",Arial, Helvetica, sans-serif, "Arial Unicode MS";
+}
+.B3w7Red{
+	color:#F00;
+	size:15px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 26px;
+	letter-spacing: 0.1em;
+}
+#B3w7Btn {
+	height: 28px;
+	width: 80px;
+	margin-left: auto;
+	background-image: url(B3-7Btn2.jpg);
+	background-repeat: no-repeat;
+	display: inline;
+	margin-top: 30px;
+	margin-right: auto;
+}
+#B3w7Btn:hover {
+	background-image: url(B3-7Btn.jpg);
+	background-repeat: no-repeat;
+}
+/*-------------B3W7------end------------*/
+#AccountTitleArea {
+	width:600px;
+	height:30px;
+	z-index:2;
+}
+#AccountTitleArea a:link{text-decoration: none;color: #000;font-weight: bold;}
+#AccountTitleArea a:visited{text-decoration: none;color: #000;font-weight: bold;}
+#AccountTitleArea a:hover{text-decoration: underline;color: #000;}
+#AccountTitleArea a:active{text-decoration: none;color: #000;font-weight: bold;}
+
+#BonusTitle {
+	width:280px;
+	height:35px;
+	z-index:2;
+	background-image: url(BonusTitle.jpg);
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	float: left;
+}
+#BonusContainer {
+	width:583px;
+	height:85px;
+	z-index:2;
+	background-image: url(Bonusinner2.jpg);
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	float: left;
+	padding-top: 15px;
+	padding-right: 8px;
+	padding-left: 10px;
+	font-family: Arial, Helvetica, sans-serif, "Arial Unicode MS", "Adobe 黑体 Std R";
+	line-height: 35px;
+	font-weight: bold;
+	font-size: 16px;
+}
+#BonusinputArea {
+	width:592px;
+	height:40px;
+	z-index:2;
+	clear: both;
+	font-size: 14px;
+	color: #F00;
+	padding-left: 8px;
+}
+
+#BonusinputArea input{
+	height: 25px;
+	width: 280px;
+}
+#Choose {
+	width:300px;
+	height:auto;
+	z-index:2;
+}
+#Choose ul{
+	list-style-type: none;	
+}
+#Choose li{
+	
+}
+#previous {
+	width:100px;
+	height:30px;
+	z-index:2;
+	background-image: url(B32-1.jpg);
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	float: left;
+	margin-left: 5px;
+}
+#next {
+	width:100px;
+	height:30px;
+	z-index:2;
+	background-image: url(B32-2.jpg);
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	float: left;
+	margin-left: 30px;
+}
+
+/*--------B5-4-5-------------------*/
+#LifeMoneyFail {
+	margin-left: 150px;
+	width: 345px;
+	height: 56px;
+	margin-top: 20px;
+	float: left;
+}
+.LifeMoneyExplain {
+	width: 625px;
+	margin-bottom: 20px;
+	float: right;
+	margin-top: 25px;
+	margin-left: -5px;
+}
+.LifeMoneySubscribe {
+	background-image: url(B3-5LiMoBtom.jpg);
+	background-repeat: no-repeat;
+	height: 118px;
+	width: 625px;
+}
+.LMExplainFileNote {
+	background-image: url(B3-5LiMoTop.jpg);
+	background-repeat: no-repeat;
+	height: 167px;
+	width: 625px;
+}
+#LifeMoneySubscribeForm {
+	position: absolute;
+	margin-top: 43px;
+	margin-left: 10px;
+}
+#LifeMoneySubscribeCityValue {
+	position: absolute;
+	font-size: 22px;
+	font-weight: bold;
+	color: #F00;
+	margin-top: 40px;
+	margin-left: 270px;
+}
+#LifeMoneySubscribeButton {
+	left: 380px;
+	margin-top: 44px;
+	margin-left: 130px;
+	position: absolute;
+}
+.LifeMoneySubscribeMousebtn {
+    width: 48px;
+    height: 31px;
+    background: url(Subscribe_Btn_s1.png) no-repeat 0px 0px;
+    display: block;
+}
+.LifeMoneySubscribeMousebtn:hover {
+    width: 48px;
+    height: 31px;
+	background: url(Subscribe_Btn_s1.png) no-repeat 0px -31px;
+	display:block;
+}
+.LMExplainPassNote {
+	background-image: url(B3-4LiMoOK.jpg);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 625px;
+}
+.WebAtmExplainFileNote {
+	height: 167px;
+	width: 625px;
+	background-image: url(B3-5LiMoTop02.jpg);
+	background-repeat: no-repeat;
+}
+
+/*--------B5-4-5--------end-----------*/
+#B42Top {
+	width:334px;
+	height:50px;
+	z-index:2;
+	background-image: url(B4Modify.jpg);
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	float: left;
+}
+#B42Submit {
+	width:80px;
+	height:28px;
+	z-index:2;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-image: url(B42Send.jpg);
+	background-repeat: no-repeat;
+}
+#B42MyAccountLink {
+	width:140px;
+	height:35px;
+	z-index:2;
+	float: right;
+	padding-top: 15px;
+	padding-left: 60px;
+}
+#B42MyAccountLink a:link{text-decoration: none;color:#0F6A97;font-weight: bold;}
+#B42MyAccountLink a:visited{text-decoration: none;color:#0F6A97;font-weight: bold;}
+#B42MyAccountLink a:hover{text-decoration: underline;color:#0F6A97;}
+#B42MyAccountLink a:active{text-decoration: none;color:#0F6A97;font-weight: bold;}
+
+/*----------------B3-3/4-----------------*/
+#B3Info {
+	height: auto;
+	width: 600px;
+	float: left;
+	padding-top: 30px;
+	margin-bottom: 25px;
+}
+
+#B3CreditCardNote {
+	height: 235px;
+	width: 600px;
+	background-image: url(../G3/PayNote.png);
+	margin-bottom: 20px;
+}
+#B3CreditCardInfo {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.B3CreditCardBtn {
+	background-image: url(CreditCardBtn.jpg);
+	height: 57px;
+	width: 182px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.B3CreditCardBtn:hover {
+	background-image: url(CreditCardBtn2.jpg);
+	background-repeat: no-repeat;
+}
+#B3Taishin{
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 25px;
+}
+#B3_2CreditCardNote{
+	width: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(CreditCardInfoBg.jpg);
+	background-repeat: no-repeat;
+	height: 185px;
+	padding-top: 6px;
+}
+#B3_2CreditCardNote ul{
+	list-style-type: none;
+}
+#B3_2CreditCardNote li{
+	list-style-type: none;
+	text-align: center;
+	font-family: "微軟正黑體";
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 4px;
+}
+.B3_Red{
+	color:#F00;
+	font-size: 20px;
+}
+#B3atmBN {
+	background-image: url(B3_atmBtn.jpg);
+	height: 30px;
+	width: 165px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+#B3atmBN:hover {
+	background-image: url(B3_atmBtn2.jpg);
+	background-repeat: no-repeat;
+}
+
+/*----------------B3-3-----------------*/
+.electricinvoice {
+	width:780px;
+	height:auto;
+	z-index:1;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	float: left;
+	color: #666;
+	border: 1px solid #71AAC6;
+	background-color: #FFF;
+}
+.electricinvoicetable{
+}
+.electricinvoicetable td {
+	border: 1px solid #71AAC6;
+	font-size: 12px;
+}
+
+.PrintinvoiceBtn {
+	width:150px;
+	height:32px;
+	z-index:1;
+	background-image: url(invoicebtn.jpg);
+	background-repeat: no-repeat;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+}
+.PrintinvoiceBtn:hover {
+	background-image: url(invoicebtnHov.jpg);
+	background-repeat: no-repeat;
+}
+.invoiceBtn2 {
+	width:150px;
+	height:32px;
+	z-index:1;
+	background-image: url(invoicebtn2.jpg);
+	background-repeat: no-repeat;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+	clear: both;
+}
+.invoiceBtn2:hover {
+	background-image: url(invoicebtn2Hov.jpg);
+	background-repeat: no-repeat;
+
+}
+.invoicedetail {
+	font-size: 12px;
+	color: #000;
+	clear: both;
+}
+.invoiceBtn2Tips {
+	width:320px;
+	height:auto;
+	z-index:1;
+	font-size: 12px;
+	color: #F00;
+	font-weight: normal;
+	border: 1px dashed #999;
+	padding-left: 10px;
+	float: right;
+	margin-right: 280px;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+.electricinvoiceTitle {
+	width:220px;
+	height:auto;
+	z-index:1;
+	float: left;
+	padding-top: 10px;
+}
+.electricinvoiceTitle ul{
+	list-style-type: none;
+}
+.electricinvoiceTitle li{
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+}
+.electricinvoiceDate {
+	width:280px;
+	height:auto;
+	z-index:1;
+	float: left;
+	text-align: center;
+}
+.electricinvoiceDate td {
+	text-align: center;
+}
+.electricinvoiceNumber {
+	width:80px;
+	height:60px;
+	z-index:1;
+	float: right;
+	font-size: 10px;
+	color: #000;
+	padding-top: 50px;
+}
+.electricinvoicePrice {
+	width:600px;
+	height:auto;
+	z-index:1;
+	clear: both;
+
+}
+.electricinvoicePrice tr{
+}
+.electricinvoicePrice td{
+	border: 0.5px dashed #CCC;
+}
+
+.electricinvoicePrice2 {
+	width:600px;
+	height:auto;
+	z-index:1;
+	clear: both;
+	border-right-width: 0.5px;
+	border-bottom-width:0.5px;
+	border-left-width: 0.5px;
+	border-right-style:dashed;
+	border-bottom-style: dashed;
+	border-left-style: dashed;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+}
+.electricinvoicePrice2 tr{
+}
+.electricinvoicePrice2 td{
+	border: 0.5px dashed #CCC;
+}
+.electricinvoicePriceDetail {
+	width:600px;
+	height:auto;
+	z-index:1;
+}
+.invoicesubmit {
+	width:102px;
+	height:29px;
+	z-index:1;
+	background-image: url(invoicebtnsubmit.jpg);
+	margin-left: 10px;
+	float: left;
+	margin-bottom: 10px;
+}
+.invoicesubmitTips {
+	width:200px;
+	height:auto;
+	z-index:1;
+	float: right;
+	padding-top: 6px;
+}
+.invoiceCenter {
+	text-align: center;
+}
+.OrderCancelDetailTitle {
+	width:100px;
+	height:20px;
+	z-index:1;
+	text-decoration: underline;
+	margin-top: 10px;
+	margin-left: 40px;
+}
+.OrderCancelDetail {
+	width:160px;
+	height:auto;
+	z-index:1;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-image: url(OrderB5y.jpg);
+	background-repeat: repeat;
+	padding: 5px;
+}
+.OrderCancelDetail ul {
+	list-style-type: none;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.OrderCancelDetail li {
+	list-style-type: none;
+	font-size: 14px;
+	text-align: right;
+	list-style-position: inside;
+	color: #333;
+}
+.B5invoiceBtnarea {
+	width:150px;
+	height:auto;
+	z-index:1;
+	float: left;
+}
+.Orderselectarea {
+	height:auto;
+	z-index:1;
+	float: right;
+	margin-right: 0px;
+	font-size: 14px;
+	padding-top: 9px;
+}
+.OrderB3Download{
+	font-size:13px;
+	color:#FFFFB5;
+	float: right;
+	margin-right: 5px;
+	height: 20px;
+}
+.OrderB3Download a:link{text-decoration: underline;color:#FFFFB5;font-weight: normal;}
+.OrderB3Download a:visited{text-decoration: underline;color:#FFFFB5;font-weight: normal;}
+.OrderB3Download a:hover{text-decoration: underline;color: #FFFFB5;font-weight: normal;}
+.OrderB3Download a:active{text-decoration: underline;color: #FFFFB5;font-weight: normal;}
+
+.OrderBtnStatus {
+	width:60px;
+	height:24px;
+	z-index:1;
+	float: right;
+	background-image: url(OrderBtn2.jpg);
+	display:block;
+}
+.OrderBtnStatus:hover {
+	background-image: url(OrderBtn2Hov.jpg);
+}
+.ReturnBtn01 {
+	width:60px;
+	height:24px;
+	z-index:1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-image: url(ReturnsBtn.jpg);
+	background-repeat: no-repeat;
+	display:block;
+}
+.ReturnBtn01:hover {
+	background-image: url(ReturnsBtnHov.jpg);
+	background-repeat: no-repeat;
+}
+.ReturnBtn02 {
+	width:60px;
+	height:24px;
+	z-index:1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-image: url(OrderBtn3.jpg);
+	background-repeat: no-repeat;
+	display:block;
+}
+.ReturnBtn02:hover {
+	background-image: url(OrderBtn3Hov.jpg);
+	background-repeat: no-repeat;
+}
+.ReturnBtn03 {
+	width:60px;
+	height:24px;
+	z-index:1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-image: url(OrderBtn4.jpg);
+	background-repeat: no-repeat;
+	display:block;
+}
+.ReturnBtn03:hover {
+	background-image: url(OrderBtn4Hov.jpg);
+	background-repeat: no-repeat;
+}
+.OrderNaviDownload{
+	color:#bf0000;
+	width:auto;
+	height:auto;
+	z-index:1;
+	float: right;
+	margin-top: 10px;
+	font-size: 13px;
+	margin-right: 5px;
+}
+.OrderNaviDownload a:link{text-decoration: underline;color:#bf0000;font-weight: normal;}
+.OrderNaviDownload a:visited{text-decoration: underline;color:#bf0000;font-weight: normal;}
+.OrderNaviDownload a:hover{text-decoration: underline;color: #bf0000;font-weight: normal;}
+.OrderNaviDownload a:active{text-decoration: underline;color: #bf0000;font-weight: normal;}
+
+.RecentOrder {
+	width:auto;
+	height:auto;
+	z-index:1;
+	float: left;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 14px;
+	padding-right: 10px;
+	_display:inline;
+}
+.InvoiceConfirmTitle {
+	width:956px;
+	height:69px;
+	z-index:1;
+	background-image: url(invoiceconfirmTitlle.jpg);
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.InvoiceConfirmArea {
+	width:705px;
+	height:auto;
+	z-index:1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	line-height: 30px;
+}
+.InvoiceConfirmBtn {
+	width:130px;
+	height:34px;
+	z-index:1;
+	background-image: url(invoiceconfirmBtn.jpg);
+	background-repeat: no-repeat;
+	display: block;
+	text-indent: -9999px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.InvoiceConfirmBtn:hover {
+	background-image: url(invoiceconfirmBtnHover.jpg);
+	background-repeat: no-repeat;
+}
+.InvoiceConfirmDetail{
+	width:705px;
+}
+
+.InvoiceConfirmDetail  a:link{text-decoration: none;color: #F60;text-decoration:underline;}
+.InvoiceConfirmDetail  a:visited{text-decoration: none;color:#F60;text-decoration:none;}
+.InvoiceConfirmDetail  a:hover{text-decoration: none;color: #F60;text-decoration:underline;}
+.InvoiceConfirmDetail  a:active{text-decoration: none;color: #F60;text-decoration:none;}
+
+
+/*中獎人填寫正確無警示訊息id*/
+.InvoiceConfirm{
+   font-size: 12px;
+}
+.InvoiceConfirm input{
+	width:200px;
+}
+
+.InvoiceConfirmAddress{
+   font-size: 12px;
+}
+.InvoiceConfirmAddress input{
+	width:220px;
+}
+
+/*中獎人填寫正確無警示訊息id*/
+
+
+/*中獎人填寫錯誤警示訊息id*/
+.InvoiceConfirmError{
+	background-color:#FFDFDF;
+	font-size: 12px;
+	color: #F00;
+	padding-left: 5px;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+}
+.InvoiceConfirmError input{
+	width:195px;
+}
+
+.InvoiceConfirmAddressError{
+	background-color:#FFDFDF;
+	font-size: 12px;
+	color: #F00;
+	padding-left: 5px;
+}
+.InvoiceConfirmAddressError input{
+	width:220px;
+}
+
+
+/*中獎人填寫錯誤警示訊息id*/
+
+/*ATM 訂單*/
+
+.ATMOrderNumber {
+	width:696px;
+	height:24px;
+	z-index:1;
+	margin-left: 130px;
+	font-size: 15px;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	float: left;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #444444;
+}
+.ATMOrderDetail {
+	width:696px;
+	height:235px;
+	z-index:1;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-left: auto;
+	background-image: url(ATMOrderinformationarea.png);
+	background-repeat: no-repeat;
+	clear: both;
+}
+.ATMOrderDetail ul {
+	list-style-type: none;
+	padding-top: 60px;
+	padding-left: 20px;
+}
+.ATMOrderDetail li {
+	line-height: 35px;
+}
+.ATMOrderTitleArea{
+	font-family:"微軟正黑體";
+	font-size: 15px;
+	color: #494949;
+	width: 696px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	clear: both;
+}
+.ATMOrderDetailTable{
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 15px;
+	margin-left: auto;
+	width: 700px;
+	border: 1px solid #9e9e9e;
+}
+.ATMOrderDetailTable tr {
+	line-height:25px;
+}
+.ATMOrderDetailTable td{
+	padding:4px;
+	font-size:13px;
+	text-align:center;
+}
+.ATMOrderContentthead{
+	background-color:#cdcdcd;
+	font-weight: bold;
+	font-size: 13px;
+}
+.ATMOrderContentITEM{
+	border-collapse:separate;
+}
+.ATMOrderContentITEM td{
+	text-align: center;
+	background-image: url(ATMOrderContentLine.jpg);
+	background-attachment: scroll;
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+.ATMOrderDetailTitle {
+	width:695px;
+	height:auto;
+	color: #FFF;
+	margin-right: auto;
+	margin-left: auto;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #797979;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	background-color: #444444;
+	padding-left:5px;
+	padding-top: 3px;
+}
+
+.ATMOrderDetailPriceTable {
+	width: 112px;
+	color: #bf0000;
+	letter-spacing: normal;
+	height: 45px;
+	line-height: 25px;
+	float: right;
+	margin-right: 5px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.ATMOrderDetailPriceTable tr{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.ATMOrderDetailPriceTable td{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+}
+.ATMOrderDetailPriceText {
+	clear: both;
+	font-size: 17px;
+	font-weight: bold;
+}
+.OrderDetailClose{
+	width:76px;
+	height:auto;
+	z-index:1;
+	letter-spacing: normal;
+	float: right;
+	padding-right: 58px;
+}
+.AccountFarB4_2 {
+	clear: both;
+	height: auto;
+	width: 920px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+.AccountBFTSetF {
+	clear: both;
+	width: 860px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #C8C8C8;
+	margin-bottom: 15px;
+}
+.AccountBFTtop {
+	height: 26px;
+	width: 838px;
+	background-repeat: repeat-x;
+	padding-left: 20px;
+	font-family: "微軟正黑體";
+	color: #FFF;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: bold;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #444;
+	margin-top: 1px;
+}
+.AccountBFTtable{
+	width:825px;
+	height:21px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.AccountBFTcenter {
+	clear: both;
+	height: auto;
+	width: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*.AccountBFTBottom {
+	height: 11px;
+	width: 880px;
+	margin-bottom: 15px;
+}*/
+.AccountBFTcenter input{
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #000;
+	padding-left: 5px;
+	width: 240px;
+	margin-left: 8px;
+	background-color: #FFF;
+	border: 1px solid #B3B3B3;
+	text-align: left;
+}
+.AccountBFTcenter select{
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #000;
+	padding-left: 5px;
+	width: 85px;
+	margin-left: 8px;
+	background-color: #FFF;
+	border: 1px solid #B3B3B3;
+	text-align: left;
+}
+.AccountBFTemail{
+	text-align:left;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #000;
+}
+.AccountBFTBtn1 {
+	background-image: url(AccountB4Btn1-1.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 97px;
+}
+.AccountBFTBtn1:hover {
+	background-image: url(AccountB4Btn1-2.jpg);
+	background-repeat: no-repeat;
+}
+.AccountBFTBtn2 {
+	background-image: url(AccountB4Btn2-1.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 97px;
+}
+.AccountBFTBtn2:hover {
+	background-image: url(AccountB4Btn2-2.jpg);
+	background-repeat: no-repeat;
+}
+.AccountBFTcenter ul.acbf{
+	width:835px;
+	list-style-type: none;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding: 0px;
+}
+.AccountBFTcenter li.acbfli{
+	font-size: 15px;
+	color: #000;
+	font-family: "微軟正黑體";
+	height: 39px;
+	margin-top: 5px;
+	padding-left: 5px;
+}
+.AccountBFTcenter li.acbfliColor{
+	font-size: 15px;
+	color: #000;
+	font-family: "微軟正黑體";
+	height: 39px;
+	margin-top: 5px;
+	background-color: #FFDFDF;
+	padding-left: 5px;
+}
+.AccountBFTcenter li.acbfGenderli{
+	font-size: 15px;
+	color: #000;
+	font-family: "微軟正黑體";
+	height: 33px;
+	padding-left: 5px;
+	padding-top: 13px;
+}
+.AccountBFTcenter li.acbfGenderli input{
+	width: 14px;
+	margin-right: 3px;
+	margin-left: 9px;
+	padding-left: 3px;
+}
+.AccountBFTcenter li.acbfGenderli label{
+	width: 13px;
+	padding-left: 3px;
+	margin-left: 0px;
+	font-family: "微軟正黑體";
+	font-size: 14px;
+	font-weight:normal;
+	margin-right: 5px;
+}
+.AccountBFTcenter li.acbfOtherli{
+	font-size: 15px;
+	color: #000;
+	font-family: "微軟正黑體";
+	height: 30px;
+	padding-top: 25px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+.AccountBFTcenter li.acbfOtherli input{
+	width: 14px;
+	margin-right: 3px;
+	padding-left: 3px;
+	margin-left: 15px;
+	padding-bottom: 1px;
+}
+.AccountBFTcenter li.acbfOtherli label{
+	width: 13px;
+	padding-left: 3px;
+	margin-left: 0px;
+	font-family: "微軟正黑體";
+	font-size: 14px;
+	font-weight:normal;
+	margin-right: 5px;
+}
+.AccountBFTcenter li.acbfSub1{
+	font-size: 14px;
+	color: #000;
+	font-family: "微軟正黑體";
+	height: 25px;
+	padding-top: 10px;
+	margin-left: 91px;
+}
+.AccountBFTcenter li.acbfSub2{
+	font-size: 14px;
+	color: #000;
+	font-family: "微軟正黑體";
+	height: 25px;
+	margin-left: 91px;
+}
+.AccountBFTcenter li.acbfSub2 input{
+	width: 13px;
+	padding-left: 3px;
+	margin-left: 0px;
+}
+.AccountBFTcenter li.acbfSub2 label{
+	width: 13px;
+	padding-left: 3px;
+	margin-left: 0px;
+	font-family: "微軟正黑體";
+	font-size: 14px;
+	font-weight:normal;
+	margin-right: 13px;
+}
+.AccountBFTcenter li.acbfli2{
+	font-size: 15px;
+	color: #000;
+	font-family: "微軟正黑體";
+	height: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	padding-left: 5px;
+}
+.AccountBFTcenter li.acbfli2 input{
+	width: 14px;
+	margin-right: 3px;
+	padding-left: 3px;
+	margin-left: 15px;
+}
+.AccountBFTcenter li.acbfli2 label{
+		width: 13px;
+	padding-left: 3px;
+	margin-left: 0px;
+	font-family: "微軟正黑體";
+	font-size: 14px;
+	font-weight:normal;
+	margin-right: 5px;
+}
+.AcBFTExplainText{
+	font-size:13px;
+	color:#616161;
+	margin-left:8px;
+	font-family: "微軟正黑體";
+}
+.AcBFTExplainTextRed{
+	font-size:13px;
+	color:#F00;
+	margin-left:8px;
+	font-family: "微軟正黑體";
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: auto;
+}
+.AcBFTExplainTextRed2{
+	font-size:13px;
+	color:#F00;
+	margin-left:15px;
+	font-family: "微軟正黑體";
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	background-color: #FFDFDF;
+	height: 30px;
+	padding-top: 5px;
+}
+.AccountBFTBtn3 {
+	background-image: url(AccountB4Btn3-1.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 97px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 8px;
+}
+.AccountBFTBtn3:hover {
+	background-image: url(AccountB4Btn3-2.jpg);
+	background-repeat: no-repeat;
+}
+.AccountBFManagement{
+	text-align:left;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #000;
+}
+.AccountBFManagement input{
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #000;
+	padding-left: 5px;
+	width: 240px;
+	margin-left: 8px;
+	background-color: #FFF;
+	border: 1px solid #B3B3B3;
+	text-align: left;
+}
+.AccountBFManageGray{
+	text-align:left;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #616161;
+}
+.AccountBFManaIn{
+	text-align:left;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #000;
+}
+.AccountBFManName{
+	text-align:left;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	letter-spacing: 2.1em;
+	color: #000;
+}
+.AccountBFManAddressee{
+	text-align:left;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	letter-spacing: 0.5em;
+}
+.AccountBFTBtn4 {
+	background-image: url(AccountB4Btn4-1.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 97px;
+}
+.AccountBFTBtn4:hover {
+	background-image: url(AccountB4Btn4-2.jpg);
+	background-repeat: no-repeat;
+}
+.AccountBFTBtn5 {
+	background-image: url(AccountB4Btn5-1.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 97px;
+}
+.AccountBFTBtn5:hover {
+	background-image: url(AccountB4Btn5-2.jpg);
+	background-repeat: no-repeat;
+}
+.AccBFTtableEntered{
+	width:835px;
+	height:21px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #616161;
+	margin-top: 15px;
+	text-indent: 6px;
+}
+.AccBFTtableEnterNew{
+	width:835px;
+	height:21px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #000;
+	margin-top: 15px;
+	background-color: #F2F2F2;
+	text-indent: 6px;
+	border: 1px solid #adadad;
+}
+.AccountBFTEnteredFF {
+	width: 850px;
+	margin-top: 38px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #444444;
+	padding-bottom: 15px;
+}
+.AccountBFTBtn6 {
+	background-image: url(AccountB4Btn6-1.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 143px;
+}
+.AccountBFTBtn6:hover {
+	background-image: url(AccountB4Btn6-2.jpg);
+	background-repeat: no-repeat;
+}
+.AccountBFTBtn7 {
+	background-image: url(AccountB4Btn7-1.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 143px;
+}
+.AccountBFTBtn7:hover {
+	background-image: url(AccountB4Btn7-2.jpg);
+	background-repeat: no-repeat;
+}
+.AccountBFTBtn8{
+	background-image: url(AccountB4Btn8-1.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 97px;
+}
+.AccountBFTBtn8:hover {
+	background-image: url(AccountB4Btn8-2.jpg);
+	background-repeat: no-repeat;
+}
+
+.AccountBFTBtn9 {
+	background-image: url(AccountB4Btn9-1.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 97px;
+}
+.AccountBFTBtn9:hover {
+	background-image: url(AccountB4Btn9-2.jpg);
+	background-repeat: no-repeat;
+}
+.AccBFTName{
+	width:auto;
+}
+.AccBFTName input{
+	width:80px;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #000;
+	padding-left: 5px;
+	margin-left: 8px;
+	background-color: #F9FDFB;
+	border: 1px solid #CDE7D8;
+	text-align: left;
+}
+.AcBFLocalTelep1{
+	width:auto;
+}
+.AcBFLocalTelep1 input{
+	width:45px;
+}
+.AcBFLocalTelep2{
+	width:auto;
+}
+.AcBFLocalTelep2 input{
+	width:169px;
+}
+.OrdertablegreenClosed{
+	font-size:12px;
+}
+.MYCustomerService {
+	clear: both;
+	height: auto;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+.MYCustomerServiceText {
+	clear: both;
+	height: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	padding-top: 70px;
+	line-height: 35px;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+}
+
+.MYCustomerService  a {font-family:"微軟正黑體";text-decoration: none;color: #bf0000;text-decoration:underline;font-weight: normal;}
+.MYCustomerService  a:visited{font-family:"微軟正黑體";text-decoration: none;color:#bf0000;text-decoration:underline;font-weight: normal;}
+.MYCustomerService  a:hover{font-family:"微軟正黑體";text-decoration: none;color: #bf0000;text-decoration:underline;font-weight: normal;}
+.MYCustomerService  a:active{font-family:"微軟正黑體";text-decoration: none;color: #bf0000;text-decoration:underline;font-weight: normal;}
+.MYCustomerServiceTable1 {
+	clear: both;
+	height: 30px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 18px;
+}
+.MYCustomerServiceTable1 td{
+	font-size: 15px;
+	font-family: "微軟正黑體";
+}
+.MYCustomerServiceTable2 {
+	clear: both;
+	height: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.MYCustomerServiceTable2 td{
+	font-size: 15px;
+	font-family: "微軟正黑體";
+}
+.MYCustomerSC-QFA {
+	width:auto;
+	margin-top: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCC;
+}
+.MYCustomerSC-QT1 {
+	width:900px;
+	padding-top: 12px;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #CCC;
+	padding-bottom: 13px;
+	margin-bottom: 0px;
+}
+.MYCustomerSC-QT1:hover {
+	width:900px;
+	background-color:#f5f5f5;
+}
+.MYCustomerSC-Questions {
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: "微軟正黑體";
+}
+.MYCustomerSC-Q_TIME {
+	padding-top: 17px;
+	font-size: 14px;
+	font-family: "微軟正黑體";
+}
+.MYCustomerSC-Q_Order_Number {
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: "微軟正黑體";
+}
+.MYCustomerSC-QT2 {
+	width:900px;
+	padding-top: 12px;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #CCC;
+	padding-bottom: 13px;
+	margin-bottom: 0px;
+}
+.MYCustomerSC-QIN_Table {
+	width:840px;
+	padding-top: 12px;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #CCC;
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+	margin-top: 13px;
+}
+.MYCustomerSC-QIN_Table-ans {
+	font-size:14px;
+	font-family: "微軟正黑體";
+}
+.SC-QT1_pic{
+	width:55px;
+	background-image: url(QuestionsPic.png);
+	background-repeat: no-repeat;
+	background-position: 3px 0px;
+	margin-left: 10px;
+}
+.SC-QT1_pic2{
+	width:55px;
+	background-image: url(QuestionsPic.png);
+	background-repeat: no-repeat;
+	background-position: -43px 0px;
+	margin-left: 10px;
+}
+.SC-QT1_pic3{
+	width:40px;
+	background-image: url(QuestionsPic.png);
+	background-repeat: no-repeat;
+	background-position: -95px 0px;
+	margin-left: 10px;
+}
+
+.PasswordChangefarm{
+	width:830px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+	padding-bottom: 25px;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #000;
+	clear: both;
+}
+.PasswordChangefarm input{
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #000;
+	padding-left: 5px;
+	width: 240px;
+	margin-left: 8px;
+	background-color: #FFF;
+	border: 1px solid #B3B3B3;
+	text-align: left;
+}
+.PCacbfli{
+	font-size: 15px;
+	color: #000;
+	font-family: "微軟正黑體";
+	height: 39px;
+	margin-top: 5px;
+	padding-left: 5px;
+	clear: both;
+	text-align: right;
+	width: 150px;
+}
+.PasChTitleMessage{
+	margin-top: -15px;
+	width: auto;
+}
+.PCacVFCode {
+	height: 30px;
+	width: 135px;
+	border: 1px solid #B3B3B3;
+	margin-top: 10px;
+	margin-left: 8px;
+	float: left;
+}
+.PCacVFCodeText {
+	font-family: "新細明體";
+	font-size: 13px;
+	color: #F00;
+	height: 23px;
+	width: 50px;
+	margin-top: 20px;
+	margin-left: 15px;
+	letter-spacing: 0.1em;
+	float: left;
+}
+.PCacVFCodeText a:link{color:#F00;text-decoration: underline;letter-spacing:normal;}
+.PCacVFCodeText a:visited{color:#F00;text-decoration: underline;letter-spacing:normal;}
+.PCacVFCodeText a:hover{color:#F00;text-decoration: underline;letter-spacing:normal;}
+.PCacVFCodeText a:active{color:#F00;text-decoration: underline;letter-spacing:normal;}
+.pcline{
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #ccc;
+	clear: both;
+	height: 65px;
+	padding-left: 156px;
+}
+.PCacBFTBtn1 {
+	background-image: url(AccountB4Btn1-1.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 110px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+}
+.PCacBFTBtn1:hover {
+	background-image: url(AccountB4Btn1-2.jpg);
+	background-repeat: no-repeat;
+}
+#Popup {
+	width:450px;
+	height:auto;
+	z-index:1;
+}
+.Popup-TOP {
+	background-repeat: no-repeat;
+	height: 15px;
+	width: 450px;
+	clear: both;
+	background-image: url(Popup1.png);
+}
+.Popup-CEN {
+	width: 446px;
+	height: auto;
+	padding-top: 30px;
+	background-color: #efefef;
+	border-right-width: 2px;
+	border-left-width: 2px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #444444;
+	border-left-color: #444444;
+	font-family: "微軟正黑體";
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+	line-height: 30px;
+	padding-bottom: 30px;
+}
+.Popup-Bottom {
+	background-image: url(Popup2.png);
+	background-repeat: no-repeat;
+	height: 15px;
+	width: 450px;
+}
+.Popup-XX {
+	background-image: url(A2-Multi-grade-Setting_xx.png);
+	height: 28px;
+	width: 27px;
+	float: right;
+	margin-top: -9px;
+	margin-right: -9px;
+}
+
+.ATM_Note { font-size:12px; color:#BF0000; }
+.LastDate{
+	width:85px;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 18px;
+}
+
+.tag {
+	width: 70px;
+	display: inline-block;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	line-height: 22px;
+}
+.tag-fami-barcode {
+	background-color: #0079C9;
+}
+/*20140811 訂單列表頁移除紅利PIN碼ICON -by Alan
+.tag-fami-pincode {
+	background-color: #00952C;
+}
+*/
+.tag-note {
+	color: #BF0000;
+}
+.btn-gray { color: #7a7a7a; background: #d9d6d6; cursor: no-drop;}
+.btn-gray:hover { color: #7a7a7a; background: #d9d6d6; cursor: no-drop;}
+
+
+
+/*C1-MemberCenter-OrderList-Orderdetail-Karen M版明細發票*/
+
+.OrderArrow_btn_box {height: 35px; background: url(newdealdetail.png) -490px -45px no-repeat; display:none;} 
+.mc-tableContentITEM .OrderDate input.btn-mini{ display: none; /*background: pink;*/}
+
+
+/* Cash Voucher UX */
+
+#vc-table {
+	height:auto;
+	margin: 0px auto;
+	text-align: center;
+	border: 1px solid #999;
+	clear: both;
+}
+#vc-table > table { border: 1px solid #FFF; }
+#vc-table th {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color:#FFF;
+	background-color: #444444;
+}
+
+#vc-table.order-detail th {
+	color:#333;
+	background-color: #CDCDCD;
+	padding: 5px;
+}
+#vc-table.order-detail td {
+	padding: 5px;
+}
+#vc-table p.info { margin: 10px; }
+#vc-table tr {
+	line-height:25px;
+}
+#vc-table td {
+	padding:1px;
+	font-size:13px;
+	text-align:center;
+	max-width: 200px;
+}
+#vc-table .text-left { text-align: left; }
+#vc-table .text-right { text-align: right; }
+#vc-table tr:nth-child(even) { background-color: #eee; }
+#vc-table.order-detail tr:nth-child(even) { background-color: #eee; }
+.vc-tableContentITEM {
+	border-collapse:separate;
+}
+.vc-tableContentITEM td {
+	text-align: center;
+	border-bottom: 1px solid #F2F2F0;
+}
+
+.vc-tableContentITEM td .limited{color:#F00;}/* 201512 限定裝置現金券*/
+
+.vc-tableContentITEM .OrderSerial input[type="submit"] { padding: 1px 5px; font-size: 11px; }
+#vc-tableContentTitleLeft {
+	height:auto;
+	text-align: left;
+	font-size: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 6px;
+}
+
+#vc-tableContentTitleLeft img {
+	float: left;
+	height: 59px;
+	width: 103px;
+}
+#vc-tableContentTitleRight {
+	height: 23px;
+	margin: 0px auto 6px auto;
+	text-align: left;
+	font-size: 12;
+	color:#666;
+	clear: both;
+}
+
+.voucherstatus_area {
+height: auto;
+/*float: left;*/
+padding-top: 10px;
+font-size: 16px;
+width: 100%;
+color:#333333; 
+margin: 0 0 15px 0;
+}
+
+.voucherstatus_area .unused, .used, .expired  { }
+.voucherstatus_area a:hover,
+.voucherstatus_area a:active { color: #08C; }
+
+.voucher_content {
+height: auto;
+margin: 10px auto 0px;
+text-align: center;
+border: 1px solid #999;
+clear: both;}
+
+.voucher_content_status{
+background:#ffe1e1;
+padding: 30px 0px;}
+
+.voucherselect_area{
+width: auto;
+height: auto;
+z-index: 1;
+float: left;
+text-align: center;
+/* padding-top: 10px; */
+font-size: 14px;
+padding-right: 20px;
+display: none;
+/*_display: inline;*/
+margin-bottom: 15px;
+
+}
+
+.voucherselect_sbn{ margin-bottom: 15px;}
+.voucher_sbn_area{
+height: auto;
+z-index: 1;
+float: left;
+margin-right: 0px;
+font-size: 14px;
+width: 65%;
+padding-top: 0px;}
+
+#vc-table tr td.CashCouponsTitle{text-align: center;}
+td.CashCouponsDEN{ }
+.VC_logo { display:none;}
+.CashCouponsChannelAll img {display:none;}
+.CashCouponsChannel_L img {display:none;}
+
+.Voucher_Pagination {margin: 10px auto 30px auto;font-size: 14px;line-height: 20px;text-align: center;display:block; }
+.voucher_ind_wrap { margin: 10px; overflow: hidden; float:left; display:none;}
+/*.voucher_ind_wrap .voucher_ind { width: 26.8%; overflow: hidden; border: 1px solid #cdcdcd; padding: 15px 15px 5px;}
+.voucher_ind tr {line-height:25px;}
+.voucher_ind td {padding:1px;font-size:13px;text-align: left;}
+.voucher_ind  .text-left { text-align: left; }
+.voucher_ind  .text-right { text-align: right; }
+.voucher_ind  th.voucher_indDEN { font-size: 45px; padding-bottom:10px;} 
+
+.CashCouponsSN_Area {width:30%; border: 1px solid #BF0000; padding:5px 15px;}
+.voucher_ind  span.CashCouponsDateSNTitle { float:left; } 
+.voucher_ind  span.CashCouponsDateSN  { float:left; } */
+
+
+.Voucher_Pagination a:link,
+.Voucher_Pagination a:hover,
+.Voucher_Pagination a:active,
+.Voucher_Pagination a:visited {  }
+.Voucher_Pagination-arrow-previous {font-size: 12px; border: 1px solid #757575; padding: 2px 10px; margin: 5px;}
+.Voucher_Pagination-arrow-next {font-size: 12px; border: 1px solid #757575; padding: 2px 10px; margin: 5px; }
+.Voucher_Pagination-arrow-previous:hover{ color: #757575; }
+.Voucher_Pagination-arrow-next:hover{ color: #757575;}
+.Voucher_Pagination-arrow-number { margin-right: 20px; font-size: 12px;border: 1px solid #757575; padding: 2px 10px; margin: 5px;}
+.Voucher_Pagination-arrow-number:hover{ color: #757575; }
+.Voucher_Pagination a.vp_select { background-color: #69c; color:#fff; }
+.status-on a {
+	color: #08c;
+	font-weight: bold;
+	border: 1px solid #08c;
+	padding: 5px;
+}
+
+.txtlistArea {margin-top:20px;}
+.txtsteps { font-size:15px; line-height: 30px;}
+.txtimg {padding: 10px 15px 20px;}
+.txtlistArea_m { display:none;}

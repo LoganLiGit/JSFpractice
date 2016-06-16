@@ -1,0 +1,55 @@
+.reputation_foreshow_item_city {
+    background-color: #333333;
+    color: #FFF;
+    min-width: 36px;
+    text-align: center;
+}
+.reputation_foreshow_item_title span {
+    color: #FFF;
+    padding: 0 3px;
+    float: left;
+}
+.reputation_foreshow_item_title {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 22px;
+}
+user agent stylesheetdiv {
+    display: block;
+}
+.reputation_foreshow_item_title span.reputation_foreshow_item_exchange {
+    background: #FF1D25 url("/jscss/back/css/shop/exchange.png") no-repeat top left;
+    padding: 0 10px;
+}
+/* /jscss/back/css/shop/exchange.png */
+.reputation_foreshow_item_title span {
+    color: #FFF;
+    padding: 0 3px;
+    float: left;
+}
+Inherited from div.reputation_foreshow_item_title
+.reputation_foreshow_item_title {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 22px;
+}
+.tita1 {
+	margin-bottom: 40px;
+}
+.h40{
+	height:40px;
+}
+.h20{
+	height:20px;
+}
+.nono{
+width:20em;
+white-space:nowrap;
+text-overflow:ellipsis;
+-o-text-overflow:ellipsis;
+overflow: hidden;
+}
+.nono2{
+width:10em;
+
+}

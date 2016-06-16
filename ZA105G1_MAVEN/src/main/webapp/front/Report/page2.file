@@ -1,0 +1,40 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<div class="cl pd-5 bg-1 bk-gray mt-20"> 
+	<span class="l">
+		<%if (rowsPerPage<rowNumber) {%>
+			<%if(pageIndex>=rowsPerPage){%>
+				<a href="<%=request.getRequestURI()%>?whichPage=1" class="btn btn-success radius">
+					<i class="Hui-iconfont">&#xe67d;</i> 至第一頁 &nbsp;
+				</a>
+				<a href="<%=request.getRequestURI()%>?whichPage=<%=whichPage-1%>" class="btn btn-success radius">
+					<i class="Hui-iconfont">&#xe678;</i> 上一頁&nbsp;
+				</a>
+			<%}%> 
+			<%if(pageIndex<pageIndexArray[pageNumber-1]){%>
+				<a href="<%=request.getRequestURI()%>?whichPage=<%=whichPage+1%>" class="btn btn-success radius">
+					下一頁<i class="Hui-iconfont">&#xe67a;</i> &nbsp;
+				</a>
+				<a href="<%=request.getRequestURI()%>?whichPage=<%=pageNumber%>" class="btn btn-success radius">
+					至最後一頁 <i class="Hui-iconfont">&#xe63d;</i>&nbsp;
+				</a>
+			<%}%>
+		 <%}%>
+	</span> 
+	<span class="r">
+		<%if ( pageNumber > 1) {%>
+			<FORM METHOD="post" ACTION="<%=request.getRequestURI()%>">
+				<div class="text-c">
+					<select size="1" name="whichPage">
+						<%for (int i=1; i<=pageNumber; i++){%>
+							<option value="<%=i%>">跳至第<%=i%>頁			
+						<%}%>
+					</select>
+					<button type="submit" class="btn btn-primary radius">
+						<i class="Hui-iconfont">&#xe665;</i>確定
+					</button>
+				</div>
+			</FORM>
+		<%}%>
+	</span>
+</div>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.group.table.model.GroupTableVO" table="group_table">
+
+		<id name="group_no" column="group_no">
+			<generator class="sequence">
+				<param name="sequence">group_table_seq</param>
+			</generator>
+		</id>
+
+
+		<property name="group_num" column="group_num" />
+		<property name="group_name" column="group_name" />
+		<property name="group_intro" column="group_intro" />
+		<property name="group_photo" column="group_photo" />
+
+		<property name="group_eat_date" column="group_eat_date" />
+		<property name="group_start_date" column="group_start_date" />
+		<property name="group_stop_date" column="group_stop_date" />
+
+		<property name="group_status" column="group_status" insert="false"/>
+		<property name="mem_no" column="mem_no" />
+		<many-to-one name="storeVO" class="com.store.model.StoreVO"
+			lazy="false">
+			<column name="store_no" />
+		</many-to-one>
+		
+		<set name="groupMems" table="group_mem" lazy="false" cascade="delete"  inverse="true"  order-by="group_no asc">			
+			<key>
+				<column name="group_no" />
+			</key>
+			<one-to-many class="com.group.mem.model.GroupMemVO" />
+		</set>
+
+
+	</class>
+</hibernate-mapping>
+

@@ -1,0 +1,564 @@
+@charset "utf-8";
+/* CSS Document */
+
+.OrderDetailFrame {
+	clear: both;
+	height: auto;
+	width: 960px;
+}
+.OrderDetailCenter {
+	height: auto;
+	width: 958px;
+	float: left;
+	background-color: #FFF;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+.OrderDetailTop {
+	clear: both;
+	height: 22px;
+	width: 960px;
+	background: url(OrderDetailTop.png) no-repeat;
+}
+.OrderDetailBottom {
+	clear: both;
+	height: 3px;
+	width: 960px;
+	background: url(OrderDetailBottom.png) no-repeat;
+	margin-bottom: 25px;
+}
+.OrderDetailNumber {
+	width:808px;
+	height:29px;
+	z-index:1;
+	margin-left: 38px;
+	letter-spacing: normal;
+	font-size: 18px;
+	float: left;
+	margin-bottom: 17px;
+	border-bottom: 1px dashed #444;
+	font-family: "微軟正黑體";
+}
+.OrderDetailClose{
+	width:76px;
+	height:30px;
+	z-index:1;
+	letter-spacing: normal;
+	float: right;
+	padding-right: 35px;
+}
+/*.OrderDetailCaption {
+	height: 20px\9;
+	padding-top: 8px\9;
+	line-height: 24px\9;
+}*/
+.OrderDetailCaption {
+	color: #FFF;
+	clear: both;
+	width: 882px;
+	margin-right: auto;
+	margin-left: auto;
+	border-bottom: 1px dotted #797979;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	text-indent: 12px;
+	background-color: #444444;
+	margin-top: 33px;
+	height: 20px;
+	padding: 4px 0;
+}
+.OrderDetailDownload{
+	font-size:13px;
+	color:#FFFFB5;
+	float: right;
+	margin-right: 5px;
+	height: 18px;
+	margin-top: 2px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.OrderDetailDownload a:link{text-decoration: underline;color: #FFFFB5;font-weight: normal;}
+.OrderDetailDownload a:visited{text-decoration: underline;color: #FFFFB5;font-weight: normal;}
+.OrderDetailDownload a:hover{text-decoration: underline;color: #FFFFB5;font-weight: normal;}
+.OrderDetailDownload a:active{text-decoration: underline;color: #FFFFB5;font-weight: normal;}
+
+.OrderDetailTrustFaq{
+	font-size:13px;
+	color:#FFFFB5;
+	float: right;
+	height: 18px;
+	margin-right: 10px;
+	margin-top: 2px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.OrderDetailTrustFaq a:link{text-decoration: underline;color:#FFFFB5;font-weight: normal;}
+.OrderDetailTrustFaq a:visited{text-decoration: underline;color:#FFFFB5;font-weight: normal;}
+.OrderDetailTrustFaq a:hover{text-decoration: underline;color:#FFFFB5;font-weight: normal;}
+.OrderDetailTrustFaq a:active{text-decoration: underline;color:#FFFFB5;font-weight: normal;}
+
+.OrderDetailTable {
+	width:880px;
+	height:auto;
+	clear: both;
+	margin: 0px auto 10px auto;
+	text-align: center;
+	border: 1px solid #999;
+	font-size: 13px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.OrderDetailTable tr {
+	line-height: 20px;
+}
+.OrderDetailTable td {
+	padding:5px;
+	text-align:center;
+	border-right: 1px dotted #999;
+	border-top: 1px solid #C5C5C5;
+}
+.OrderDetailTable a:link{text-decoration: none;color: #F60;}
+.OrderDetailTable a:visited{text-decoration: none;color: #F60;}
+.OrderDetailTable a:hover{text-decoration: underline;color: #F60;}
+.OrderDetailTable a:active{color:#F60;text-decoration:  none;}
+
+.OrderDetailTable .TNBlock { margin:10px; text-align:left; }
+
+.OrderDetailContentthead{
+	background-color:#cdcdcd;
+	font-weight: bold;
+}
+.OrderDetailContentITEM{
+	border-collapse:separate;
+}
+.OrderDetailContentITEM td{
+	text-align: center;
+}
+.OrderDetailtablegreen{
+	background-color: #eee;	
+}
+.OrderDetailGrayText{
+	color:#8F8F8F;
+}
+.OrderDetailContentTitleLeft {
+	width:155px;
+	height:auto;
+	z-index:1;
+	text-align: left;
+	font-size: 12px;
+	float: left;
+}
+.OrderDetailCertificateInfo {
+	margin: 5px;
+	clear: both;
+	height: 80px;
+	width: 120px;
+}
+.order-get-coupon-box {
+	width: 200px;
+	height: 48px;
+	margin:8px auto 0 auto;
+	clear: both;
+} 
+.order-get-coupon {
+	width: 40px;
+	float: left;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+.order-get-coupon-icon {
+	width: 40px;
+	height: 25px;
+	padding-top: 25px; 
+	font-size: 13px;
+	color: #333;
+	line-height: 18px;
+	text-align: center;
+	text-decoration: underline;
+}
+.order-get-coupon-icon.c1 { background: url(get-coupon-icon.png) 0 0 no-repeat; }
+a.disabled .order-get-coupon-icon.c1 { color: #8F8F8F; text-decoration: none; background: url(get-coupon-icon.png) -40px 0 no-repeat; }
+.order-get-coupon-icon.c2 { background: url(get-coupon-icon.png) -80px 0 no-repeat; }
+a.disabled .order-get-coupon-icon.c2 { color: #8F8F8F; text-decoration: none; background: url(get-coupon-icon.png) -120px 0 no-repeat; }
+.order-get-coupon-icon.c3 { background: url(get-coupon-icon.png) 0 -50px no-repeat; }
+a.disabled .order-get-coupon-icon.c3 { color: #8F8F8F; text-decoration: none; background: url(get-coupon-icon.png) -40px -50px no-repeat; }
+.order-get-coupon-icon.c4 { background: url(get-coupon-icon.png) -80px -50px no-repeat; }
+a.disabled .order-get-coupon-icon.c4 { color: #8F8F8F; text-decoration: none; background: url(get-coupon-icon.png) -120px -50px no-repeat; }
+.disabled-text { color:#8F8F8F; }
+/*.OrderDetailCertificatePic1:hover {
+	background-image: url(OrderDetailPrinterHovr1.png);
+	background-repeat: no-repeat;
+	text-decoration:none;
+	color: #F60;
+}*/
+.order-get-invoice { margin: 20px auto; text-align: center; }
+.order-atm-info { padding: 20px; font-size: 14px; line-height: 20px; }
+.order-atm-header { padding: 10px 20px; }
+.order-atm-info .important { font-weight: 600; }
+.OrderDetailCertificateText {
+	width: 40px;
+	float: left;
+	font-size: 13px;
+	color: #333;
+	line-height: 18px;
+	height: 17px;
+	text-decoration: underline;
+}
+.OrderDetailCerFicaUsedText {
+	width: 40px;
+	float: left;
+	font-size: 13px;
+	color: #8F8F8F;
+	line-height: 18px;
+	height: 17px;
+}
+.OrderDetailPriceF {
+	clear: both;
+	height: 60px;
+	width: 200px;
+}
+.OrderDetailPriceFTable {
+	width: 112px;
+	color: #bf0000;
+	letter-spacing: normal;
+	height: 45px;
+	line-height: 25px;
+	float: right;
+	margin-right: 5px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.OrderDetailPriceFTable tr{
+	border-style: none;
+}
+.OrderDetailPriceFTable td{
+	border-style: none;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+}
+.OrderDetailPriceText {
+	clear: both;
+	font-size: 17px;
+	font-weight: bold;
+}
+.OrderDetailAmountRefunded {
+	clear: both;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+.OrderDetailRefundedFF {
+	height: 25px;
+	width: 145px;
+	clear: both;
+	font-size: 13px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.OrderDetailRefundedText{
+	color: #000;
+	width: 100px;
+	height: 25px;
+	float: left;
+	text-align: right;
+}
+.OrderDetailRefundedMoney{
+	color: #000;
+	width: 45px;
+	height: 25px;
+	float: left;
+	text-align: right;
+}
+
+/*-------(發票)---ST----*/
+.OrderDetailInvoice{
+	height:auto;
+	clear: both;
+	margin: 0px auto 10px auto;
+	border: 1px solid #999;
+	background-color: #FEFCED;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.OrderDetailInvoiceInText {
+	color:#000;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 15px;
+	line-height: 25px;
+}
+.OrderDetailInvoiceInfor {
+	width:600px;
+	z-index:1;
+	font-weight: normal;
+	color: #000;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 14px;
+	text-align: left;
+	clear: both;
+}
+.OrderDetailInvoiceInfor ul {
+	margin-left: 60px;
+	list-style-type: none;
+}
+.OrderDetailInvoiceInfor li{
+	margin-top: 2px;
+	margin-bottom: 5px;
+}
+.OrDetElectricinvoice {
+	width:800px;
+	height:auto;
+	margin: 0px auto 10px auto;
+	color: #666;
+	border: 1px solid #71AAC6;
+	background-color: #FFF;
+	clear: both;
+}
+.OrDetElectricinvoiceTable{
+	width:800px;
+	clear: both;
+	line-height: 22px;
+}
+.OrDetElectricinvoiceTable td {
+	border: 1px solid #71AAC6;
+	font-size: 12px;
+	padding-right: 5px;
+	text-indent: 5px;
+}
+.OrDetInvoiceCenter {
+	text-align: center;
+}
+.OrDetinvoicedetail {
+	font-size: 12px;
+	color: #525252;
+	clear: both;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: bold;
+	line-height: 20px;
+	width: 800px;
+	padding-top: 7px;
+	padding-bottom: 20px;
+	border-top: 1px dashed #B3B3B3;
+}
+.OrDetinvoicedetail ol{}
+.OrDetinvoicedetail li{
+	list-style-position: outside;
+	list-style-image: url(OrDetinvoicedetailF.png);
+}
+.OrDetETCInvoiceAmount {
+	height:auto;
+	z-index:1;
+	margin-top: 0px;
+	color: #666;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+	text-align: right;
+}
+/*-------(發票)--EN-----*/
+.OrderDetailWindows {
+	width: 700px;
+	height: auto;
+}
+.OrderDetailRequestTop{
+	height: 38px;
+	width: 700px;
+	font-family: "微軟正黑體";
+	font-size: 24px;
+	color: #BF0000;
+	background: url(OrderDetailRequest01.png) no-repeat;
+	font-weight: 900;
+	letter-spacing: 0.2em;
+	text-indent: 25px;
+	padding-top: 10px;
+	line-height: 40px;
+}
+.OrderDetailRequestCen {
+	background: url(MembeWContent.png) repeat;
+	width: 646px;
+	padding: 15px 27px;
+	line-height: 32px;
+	color: #000;
+	font-size: 14px;
+	font-family: "微軟正黑體";
+}
+.OrderDetailRequestBottom {
+	background: url(OrderDetailRequest01_03.png) no-repeat;
+	height: 9px;
+	width: 700px;
+}
+.OrderDetailWindowsClose {
+	float: right;
+	height: 37px;
+	width: 37px;
+	margin-right: -7px;
+	position: relative;
+	margin-bottom: -27px;
+}
+.OrdDetReqHeading {
+	font-size:19px;
+	font-weight:bold;
+	line-height: 45px;
+}
+.OrdDetReqBtnFarm {
+	width: 700px;
+	height: 46px;
+	background: url(MembeWContent.png) repeat;
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
+.OrdDetReqBtn1 {
+	background: url(OrderDetailRequestBtn01.png) no-repeat;
+	height: 46px;
+	width: 186px;
+	float: left;
+	margin-left: 130px;
+}
+.OrdDetReqBtn1:hover {
+	background: url(OrderDetailRequestBtn03.png) no-repeat;
+}
+.OrdDetReqBtn2 {
+	background: url(OrderDetailRequestBtn02.png) no-repeat;
+	height: 46px;
+	width: 186px;
+	float: right;
+	margin-right: 130px;
+}
+.OrdDetReqBtn2:hover {
+	background: url(OrderDetailRequestBtn04.png) no-repeat;
+}
+.OrdDetReqfo{
+	width:640px;
+	margin-top: 10px;
+	margin-left: -5px;
+}
+.OrdDetReqTable{
+	width:640px;
+	font-size: 14px;
+	color: #000;
+}
+.OrdDetReqName input{
+	text-align: left;
+	width: 200px;
+	margin-left: 7px;
+	font-size: 14px;
+	font-family: "微軟正黑體";
+	color: #000;
+}
+.OrdDetReqAddress input{
+	text-align: left;
+	margin-left: 7px;
+	width: 380px;
+	font-family: "微軟正黑體";
+	font-size: 14px;
+	color: #000;
+}
+.OrdDetReqAddress select{
+	text-align: left;
+	margin-left: 7px;
+	width: 80px;
+	font-family: "微軟正黑體";
+	font-size: 14px;
+	color: #000;
+}
+.OrdDetReqBtn3 {
+	background: url(OrderDetailRequestBtn5.png) no-repeat;
+	height: 46px;
+	width: 98px;
+	margin-right: auto;
+	clear: both;
+	margin-left: auto;
+}
+.OrdDetReqBtn3:hover {
+	background: url(OrderDetailRequestBtn6.png) no-repeat;
+}
+.CouponListClose {
+	width:27px;
+	height:28px;
+	z-index:4;
+	background-image: url(MembeWclose.png);
+	float: right;
+	margin-top: -7px;
+	margin-right: -8px;
+}
+.OrderDetailCaptionTittle {
+	font-size: 16px;
+	color: #FFF;
+	width: auto;
+	font-weight: bold;
+	height: 20px;
+	float: left;
+	text-align: left;
+	font-family: "微軟正黑體";
+}
+.OrderDetailCapDownload {
+	width: 107px;
+	height: 25px;
+	float: right;
+	background: url(OrderDetailDownload.png) no-repeat;
+	margin-right: 10px;
+	margin-top: -2px;
+}
+.OrderDetailCapDownload:hover {
+	background: url(OrderDetailDownloadHov.png) no-repeat;
+}
+.textLeftPaad{
+	text-align:left;
+	padding:5px;
+}
+/*email_coupon_pop_window*/
+
+.email_pop { 
+	width: 400px; 
+	height: 150px; 
+	padding-top: 1px; 
+	background: url(popwindow_bg.png) no-repeat; 
+}
+.email_pop_content { 
+	width: 380px; 
+	margin: 0 auto; 
+	text-align: center; 
+	font-family:"微軟正黑體","Microsoft JhengHei" 
+}
+.email_pop_content p { 
+	line-height: 18px; 
+	margin: 16px 0; 
+}
+.email_pop_content a { color:#00F; }
+.email_pop_content input { 
+	width: 350px; 
+	margin: 0; 
+}
+.email_pop_content .email_pop_error { 
+	height: 30px; 
+	color: #F00; 
+	font-size: 12px; 
+}
+.email_pop_content .email_pop_error_info { line-height:30px; }
+.email_pop_content .send { 
+	width: 127px; 
+	height: 32px; 
+	display: block; 
+	margin: 0 auto; 
+	font-size: 0px; 
+	text-indent: -9999px; 
+	background: url(coupon_send.jpg) no-repeat; 
+}
+.email_pop_content .send:hover { 
+	width: 127px; 
+	height: 32px; 
+	background: url(coupon_send_hov.jpg) no-repeat; 
+}
+.order-detail p.redText{ color: #bf0000; }
+
+/*download app popup*/
+
+.pop-download-app {
+	width: 274px;
+	height: 86px;
+	display: block;
+	margin: -7px 0 0 446px;
+	background: url(download_app.png) no-repeat;
+}
+.m-order-table-title, .m-OrderDetailInvoice, .m-OrDetElectricinvoice {display:none;}

@@ -1,0 +1,29 @@
+/*==============================購物車插鍵=================================*/
+#abgne_float_ad {
+	display: none;
+	position: absolute;
+	background:#FFF;
+		
+}
+#abgne_float_ad img {
+	border: none;
+}
+div.bigDiv {
+	height: 3000px;
+}
+		/* 以下兩段是針對右邊的購物清單設計用) */
+#cart .header{
+	width: 250px;
+	height: 0px;
+	background: url(cartSilder_header.gif) no-repeat;
+	text-indent: -9999px;
+}
+
+#cart .middle {
+	width: 245px;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-top: none;
+	font-size: 12px;
+	text-align: center;
+}

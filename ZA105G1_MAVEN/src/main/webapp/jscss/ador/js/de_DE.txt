@@ -1,0 +1,11 @@
+﻿{ "processing": "處理中...",
+ "slengthMenu": "每頁顯示_MENU_ 條",
+ "szeroRecords": "沒有找到匹配的記錄",
+ "sProcessing": "&lt;img src='. /loading.gif' /&gt;",
+ "info": "顯示_START_ 到_END_ ,共_TOTAL_ 條",
+ "infoEmpty": "0條", "infoFiltered": "(從_MAX_ 條中過濾) ",
+ "infoPostFix": "",
+ "search": "當前檢索",
+ "url": "",
+ "paginate": { "first": "第一頁", "previous": "上一頁", "next": "下一頁", "last": "最後一頁" }
+}

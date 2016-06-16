@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.store.model.StoreVO" table="store">
+
+        <id name="store_no" column="store_no">
+            <generator class="sequence" >
+              <param name="sequence">store_no</param>
+            </generator>  
+        </id>
+
+		<property name="store_account" column="store_account" />
+		<property name="store_password" column="store_password" />
+		<property name="store_state" column="store_state" />
+		<property name="store_name" column="store_name" />
+		<property name="store_regist_date" column="store_regist_date" />
+		<property name="store_zipcode" column="store_zipcode" />
+		<property name="store_city" column="store_city" />
+		<property name="store_district" column="store_district" />
+		<property name="store_address" column="store_address" />
+		<property name="store_phone" column="store_phone" />
+		<property name="store_type" column="store_type" />
+		<property name="store_score" column="store_score" />
+		<property name="store_balance" column="store_balance" insert="false"/>
+		<property name="store_cell_registcode" column="store_cell_registcode" />
+		<property name="store_violation" column="store_violation" />
+		<property name="manager_name" column="manager_name" />
+		<property name="manager_gender" column="manager_gender" />
+		<property name="manager_email" column="manager_email" />
+		<property name="manager_id" column="manager_id" />
+		<property name="manager_cellphone" column="manager_cellphone" />
+
+		<property name="manager_credit_num" column="manager_credit_num" />
+		<property name="manager_credit_expyear" column="manager_credit_expyear" />
+		<property name="manager_credit_expmonth" column="manager_credit_expmonth" />
+		<property name="manager_credit_secure_num" column="manager_credit_secure_num" />
+		<property name="tickts_limits" column="tickts_limits" insert="false"/>
+		<property name="store_longitude" column="store_longitude" />
+		<property name="store_latitude" column="store_latitude" />
+		
+		<property name="store_introduction" column="store_introduction"/>
+		<property name="clicks" column="clicks" insert="false"/>
+		<property name="store_articles" column="store_articles" insert="false"/>
+		<property name="store_scopenum" column="store_scopenum" insert="false"/>
+		<property name="store_pocketnum" column="store_pocketnum" insert="false"/>
+		
+	
+		<set name="store_pics" table="store_pic" lazy="false" cascade="none" inverse="true"
+			order-by="PIC_NO asc">
+			<key>
+				<column name="store_no" />
+			</key>
+			<one-to-many class="com.store.pic.model.Store_picVO" />
+		</set>
+		<set name="groupTables" table="group_table" lazy="false" cascade="none" inverse="true"
+			order-by="group_no asc">
+			<key>
+				<column name="store_no" />
+			</key>
+			<one-to-many class="com.group.table.model.GroupTableVO" />
+		</set>
+
+
+	</class>
+</hibernate-mapping>
+
+

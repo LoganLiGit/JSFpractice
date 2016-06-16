@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+		 id="WebApp_ID" version="3.0">
+  <display-name>ZA105G1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+    <context-param>
+        <param-name>org.apache.tomcat.websocket.textBufferSize</param-name>
+        <param-value>307200</param-value>
+  </context-param>
+  
+    <!-- <error-page>
+        <error-code>
+            400
+        </error-code>
+        <location>
+            /index.jsp
+        </location>
+    </error-page>
+    
+    <error-page>
+        <error-code>
+            404
+        </error-code>
+        <location>
+            /index.jsp
+        </location>
+    </error-page>
+
+
+    <error-page>
+        <error-code>
+            500
+        </error-code>
+        <location>
+            /index.jsp
+        </location>
+    </error-page> -->
+
+  <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/ZA105G1</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+    <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/TestDB</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  <servlet>
+    <servlet-name>Test_DataSource</servlet-name>
+    <servlet-class>Test_DataSource</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test_DataSource</servlet-name>
+    <url-pattern>/Test_DataSource</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StoreServlet</servlet-name>
+    <servlet-class>com.store.controller.StoreServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreServlet</servlet-name>
+    <url-pattern>/store/store.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Store_picServlet</servlet-name>
+    <servlet-class>com.store.pic.controller.Store_picServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Store_picServlet</servlet-name>
+    <url-pattern>/store_pic/store_pic.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DBGifReader5</servlet-name>
+    <servlet-class>com.store.pic.controller.DBGifReader5</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DBGifReader5</servlet-name>
+    <url-pattern>/store_pic/DBGifReader5.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DBGifReader4</servlet-name>
+    <servlet-class>com.group.controller.DBGifReader4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DBGifReader4</servlet-name>
+    <url-pattern>/group/DBGifReader4.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DBGifReader1</servlet-name>
+    <servlet-class>com.group.controller.DBGifReader1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DBGifReader1</servlet-name>
+    <url-pattern>/group/DBGifReader1.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>DBGifReader2</servlet-name>
+    <servlet-class>com.store.pic.controller.DBGifReader2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DBGifReader2</servlet-name>
+    <url-pattern>/store_pic/DBGifReader2.do</url-pattern>
+  </servlet-mapping>
+  
+  	<servlet>
+		<servlet-name>GroupTableServlet</servlet-name>
+		<servlet-class>com.group.controller.GroupTableServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GroupTableServlet</servlet-name>
+		<url-pattern>/group/group.do</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>MemberServlet</servlet-name>
+		<servlet-class>com.member.controller.MemberServlet</servlet-class>
+	</servlet>
+	
+	
+<!-- 	會員處理   	 -->
+	<servlet-mapping>
+		<servlet-name>MemberServlet</servlet-name>
+		<url-pattern>/front/member/register/member.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MemberServlet</servlet-name>
+		<url-pattern>/front/member/member.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MemberServlet</servlet-name>
+		<url-pattern>/front/member/login/member.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MemberServlet</servlet-name>
+		<url-pattern>/member/member.do</url-pattern>
+	</servlet-mapping>
+	
+
+	
+	
+	
+<!-- 	過濾器		 -->
+	  <filter>
+	    <filter-name>loginFilter</filter-name>
+	    <filter-class>filters.LoginFilter</filter-class>
+	  </filter>
+	  <filter-mapping>
+	    <filter-name>loginFilter</filter-name>
+	    <url-pattern>/front/personal/personal.do</url-pattern>
+	    <url-pattern>/Back/fbcm/myorderform/MyAddTrandaction.jsp</url-pattern>
+	    <url-pattern>/Back/fbcm/myorderform/MyOrderTicket.jsp</url-pattern>
+	    <url-pattern>/Back/fbcm/myorderform/MyTrandaction.jsp</url-pattern>
+	    <url-pattern>/Back/fbcm/myorderform/MyOrderform_List.jsp</url-pattern>
+	    <url-pattern>/front/group/group_creat.jsp</url-pattern>
+	    <url-pattern>/front/group/group_manage.jsp</url-pattern>
+	    
+	    <url-pattern>/front/member/JuicyTalk/single.jsp</url-pattern>
+	    <dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	    <dispatcher>INCLUDE</dispatcher>
+	    <dispatcher>ERROR</dispatcher>
+	  </filter-mapping>
+
+
+<!-- 	會員權限封鎖過濾器		 -->	  
+	  <filter>
+	    <filter-name>MemStatusFilter</filter-name>
+	    <filter-class>filters.MemStatusFilter</filter-class>
+	  </filter>
+	  
+	  <filter-mapping>
+	    <filter-name>MemStatusFilter</filter-name>
+	    <url-pattern>/personal/personal.do</url-pattern>
+	    <url-pattern>/Back/fbcm/myorderform/MyAddTrandaction.jsp</url-pattern>
+	    <url-pattern>/Back/fbcm/myorderform/MyOrderTicket.jsp</url-pattern>
+	    <url-pattern>/Back/fbcm/myorderform/MyTrandaction.jsp</url-pattern>
+	    <url-pattern>/Back/fbcm/myorderform/MyOrderform_List.jsp</url-pattern>
+	    <url-pattern>/front/group/group_creat.jsp</url-pattern>
+	    <url-pattern>/front/group/group_manage.jsp</url-pattern>
+	    
+	    <url-pattern>/front/member/JuicyTalk/single.jsp</url-pattern>
+	    <dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	    <dispatcher>INCLUDE</dispatcher>
+	    <dispatcher>ERROR</dispatcher>
+	  </filter-mapping>
+	  
+<!-- 	店家權限封鎖過濾器		 -->	  
+	  <filter>
+	    <filter-name>StoreStatusFilter</filter-name>
+	    <filter-class>filters.StoreStatusFilter</filter-class>
+	  </filter>
+	  
+	  <filter-mapping>
+	    <filter-name>StoreStatusFilter</filter-name>
+	    <url-pattern>/Back/fbcm/myorderform/MyAddTrandaction.jsp</url-pattern>
+	    <url-pattern>/Back/fbcm/myorderform/MyOrderTicket.jsp</url-pattern>
+	    <url-pattern>/Back/fbcm/myorderform/MyTrandaction.jsp</url-pattern>
+	    <url-pattern>/Back/fbcm/myorderform/MyOrderform_List.jsp</url-pattern>
+	    <url-pattern>/front/group/group_creat.jsp</url-pattern>
+	    <url-pattern>/front/group/group_manage.jsp</url-pattern>
+	    
+	    <url-pattern>/front/member/JuicyTalk/single.jsp</url-pattern>
+	    <dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	    <dispatcher>INCLUDE</dispatcher>
+	    <dispatcher>ERROR</dispatcher>
+	  </filter-mapping>
+	  
+	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  
+<!--  圖片上傳顯示	 -->
+	<servlet>
+		<servlet-name>DBGifReader3</servlet-name>
+		<servlet-class>com.member.model.DBGifReader3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DBGifReader3</servlet-name>
+		<url-pattern>/DBGifReader3</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+  <servlet>
+		<servlet-name>FriendServlet</servlet-name>
+		<servlet-class>com.friend.controller.FriendServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>FriendServlet</servlet-name>
+		<url-pattern>/friend/friend.do</url-pattern>
+  </servlet-mapping>
+  
+
+
+  
+  <servlet>
+		<servlet-name>ArticleServlet</servlet-name>
+		<servlet-class>com.article.controller.ArticleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>ArticleServlet</servlet-name>
+		<url-pattern>/article/article.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+		<servlet-name>ReplyServlet</servlet-name>
+		<servlet-class>com.reply.controller.ReplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>ReplyServlet</servlet-name>
+		<url-pattern>/reply/reply.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+		<servlet-name>PersonalServlet</servlet-name>
+		<servlet-class>com.personal.controller.PersonalServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>PersonalServlet</servlet-name>
+		<url-pattern>/personal/personal.do</url-pattern>
+  </servlet-mapping>
+  
+
+	
+	<servlet>
+		<servlet-name>DBGifReader6</servlet-name>
+		<servlet-class>com.member.model.DBGifReader6</servlet-class>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>DBGifReader6</servlet-name>
+		<url-pattern>/DBGifReader6</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ConnectorServlet</servlet-name>
+		<servlet-class>com.ckfinder.connector.ConnectorServlet</servlet-class>
+		<init-param>
+			<description>
+				Path to configuration file can be relative path inside application,
+				absolute path on local file system or UNC path.
+			</description>
+			<param-name>XMLConfig</param-name>
+			<param-value>/WEB-INF/config.xml</param-value>
+		</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ConnectorServlet</servlet-name>
+		<url-pattern>
+			/ckfinder/core/connector/java/connector.java
+		</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>welcome.html</welcome-file>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	  <servlet>
+		<servlet-name>DBGifReader11</servlet-name>
+		<servlet-class>com.img.model.DBGifReader11</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DBGifReader11</servlet-name>
+		<url-pattern>/DBGifReader11.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 商城:前端 購物車處理作業 -->
+      <servlet>
+		    <servlet-name>EshopServlet</servlet-name>
+		    <servlet-class>com.EShop.controller.Eshop_Servlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+		    <servlet-name>EshopServlet</servlet-name>
+		    <url-pattern>/front/E_Shop/Eshop_Servlet.do</url-pattern>
+	  </servlet-mapping>
+<!-- 商城:處理地區作業 -->
+      <servlet>
+		    <servlet-name>Eshop_Area_Servlet</servlet-name>
+		    <servlet-class>com.EShop.controller.Eshop_Area_Servlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+		    <servlet-name>Eshop_Area_Servlet</servlet-name>
+		    <url-pattern>/front/E_Shop/Eshop_Area_Servlet.do</url-pattern>
+	  </servlet-mapping>	  
+
+<!-- 商城:前端 儲值團購金 處理作業 -->
+      <servlet>
+		    <servlet-name>EorderServlet</servlet-name>
+		    <servlet-class>com.EShop.controller.Eorder_Servlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+		    <servlet-name>EorderServlet</servlet-name>
+		    <url-pattern>/front/E_My_Order/Eorder_Servlet.do</url-pattern>
+	  </servlet-mapping>
+<!-- 商城:前端團購劵與儲值金 紀錄/查詢 處理作業 -->
+      <servlet>
+		    <servlet-name>EticketServlet</servlet-name>
+		    <servlet-class>com.EShop.controller.Eticket_Servlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+		    <servlet-name>EticketServlet</servlet-name>
+		    <url-pattern>/front/E_My_Ticket/Eticket_Servlet.do</url-pattern>
+	  </servlet-mapping>
+	  
+
+<!-- 										後端											 -->	  
+<!-- (後端):	後端登入 過濾器		 -->
+	  <filter>
+	    <filter-name>AdmLoginFilter</filter-name>
+	    <filter-class>filters.Back_Login_Filter</filter-class>
+	  </filter>
+	  <filter-mapping>
+	    <filter-name>AdmLoginFilter</filter-name>
+	    <url-pattern>/Back/CashTr/*</url-pattern>
+	    <url-pattern>/Back/Bcmg/*</url-pattern>
+	    <url-pattern>/Back/Index/*</url-pattern>
+	    <dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	    <dispatcher>INCLUDE</dispatcher>
+	    <dispatcher>ERROR</dispatcher>
+	  </filter-mapping>
+	  
+<!-- (後端):	管理員正常後端登入處理   	 -->
+	<servlet>
+		<servlet-name>Login_Servlet</servlet-name>
+		<servlet-class>com.Adm.controller.Back_Login_Servlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Login_Servlet</servlet-name>
+		<url-pattern>/Back/Login/Login_Servlet.do</url-pattern>
+	</servlet-mapping>
+<!-- (後端):	後端 會員管理系統  	 -->
+	<servlet>
+		<servlet-name>Mbma_Servlet</servlet-name>
+		<servlet-class>com.member.controller.Back_Mbma_Servlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mbma_Servlet</servlet-name>
+		<url-pattern>/Back/Mbma/Mbma_Servlet.do</url-pattern>
+	</servlet-mapping>
+<!-- (後端):	管理員管理系統  	 -->
+	<servlet>
+		<servlet-name>Adma_Servlet</servlet-name>
+		<servlet-class>com.Adm.controller.Back_Adma_Servlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Adma_Servlet</servlet-name>
+		<url-pattern>/Back/Adma/Adma_Servlet.do</url-pattern>
+	</servlet-mapping>
+<!-- 後端:儲值金管理 控制器 -->
+	<servlet>
+		<servlet-name>Back_CashTr_Servlet</servlet-name>
+		<servlet-class>com.CashTr.controller.Back_CashTr_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Back_CashTr_Servlet</servlet-name>
+		<url-pattern>/Back/Cashtr/Cashtr_Servlet.do</url-pattern>
+	</servlet-mapping>
+<!-- 後端:儲值金管理 店家結清部分 控制器 -->
+	<servlet>
+		<servlet-name>Store_CashTr_Servlet</servlet-name>
+		<servlet-class>com.CashTr.controller.Back_Store_CashTr_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Store_CashTr_Servlet</servlet-name>
+		<url-pattern>/Back/Cashtr/Cashtr_Store_Servlet.do</url-pattern>
+	</servlet-mapping>
+	
+<!-- 後端:團購劵系統 團購劵狀態改變  控制器 -->
+	<servlet>
+		<servlet-name>Back_Bcmg_Servlet</servlet-name>
+		<servlet-class>com.Bcmg.controller.Back_Bcmg_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Back_Bcmg_Servlet</servlet-name>
+		<url-pattern>/Back/Bcmg/Back_Bcmg_Servlet.do</url-pattern>
+	</servlet-mapping>
+<!-- 後端:團購劵系統 團購劵 新增修改刪除控制器 -->
+	<servlet>
+		<servlet-name>Back_Bcmg_Servlet2</servlet-name>
+		<servlet-class>com.Bcmg.controller.Back_Bcmg_Servlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Back_Bcmg_Servlet2</servlet-name>
+		<url-pattern>/Back/Bcmg/Back_Bcmg_Servlet2.do</url-pattern>
+	</servlet-mapping>
+
+<!-- 後端:公告 控制器 -->
+	<servlet>
+		<servlet-name>Back_Ntmg_Servlet</servlet-name>
+		<servlet-class>com.Ntmg.controller.Back_Ntmg_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Back_Ntmg_Servlet</servlet-name>
+		<url-pattern>/Back/Ntmg/Back_Ntmg_Servlet.do</url-pattern>
+	</servlet-mapping>
+<!-- 後端:Q&A 控制器 -->
+	<servlet>
+		<servlet-name>Back_Qamg_Servlet</servlet-name>
+		<servlet-class>com.Qamg.controller.Back_Qamg_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Back_Qamg_Servlet</servlet-name>
+		<url-pattern>/Back/Qamg/Back_Qamg_Servlet.do</url-pattern>
+	</servlet-mapping>
+<!-- (後端):	後端 店家管理系統  	 -->
+	<servlet>
+		<servlet-name>Stoma_Servlet</servlet-name>
+		<servlet-class>com.Stoma.controller.Back_Stoma_Servlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Stoma_Servlet</servlet-name>
+		<url-pattern>/Back/Stoma/Stoma_Servlet.do</url-pattern>
+	</servlet-mapping>
+<!-- (後端):	後端 廣告管理系統  	 -->
+	<servlet>
+		<servlet-name>Atmg_Servlet</servlet-name>
+		<servlet-class>com.Atmg.controller.Back_Atmg_Servlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Atmg_Servlet</servlet-name>
+		<url-pattern>/Back/Atmg/Back_Atmg_Servlet.do</url-pattern>
+	</servlet-mapping>
+
+<!--  -->
+<!-- 	過濾器		 -->
+	  <filter>
+	    <filter-name>loginFilter2</filter-name>
+	    <filter-class>filters.LoginFilter</filter-class>
+	  </filter>
+	  <filter-mapping>
+	    <filter-name>loginFilter2</filter-name>   
+	    <url-pattern>/front/E_Shop/EShop_Check.jsp</url-pattern> <!-- 會員結帳確認需要登入帳號 -->
+	    <url-pattern>/front/E_Shop/EShop_Check_Over.jsp</url-pattern> <!-- 會員結帳完畢也需確認需要登入帳號 -->
+	    <url-pattern>/front/E_My_Order/*</url-pattern><!-- 儲值查詢或者 儲值都要先登入帳號 -->	
+	    <url-pattern>/front/E_My_Ticket/*</url-pattern> <!-- 會員查紀錄需確認需要登入帳號 -->	    
+	    <dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	    <dispatcher>INCLUDE</dispatcher>
+	    <dispatcher>ERROR</dispatcher>
+	  </filter-mapping>
+
+
+
+  
+<!-- 商城:前端 購物車處理作業 -->
+      <servlet>
+		    <servlet-name>ShoppingServlet</servlet-name>
+		    <servlet-class>com.TicketShopCar.controller.TicketShoppingServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+		    <servlet-name>ShoppingServlet</servlet-name>
+		    <url-pattern>/Back/fbcm/Shopping.do</url-pattern>
+	  </servlet-mapping>
+<!-- 商城:處理作業 -->
+      <servlet>
+		    <servlet-name>ShoppingServlet2</servlet-name>
+		    <servlet-class>com.TicketShopCar.controller.ShopSet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+		    <servlet-name>ShoppingServlet2</servlet-name>
+		    <url-pattern>/Back/fbcm/Shopping2.do</url-pattern>
+	  </servlet-mapping>
+	  
+<!-- 訂單:前端會員處理作業 -->
+	<servlet>
+		<servlet-name>DetailServlet</servlet-name>
+		<servlet-class>com.fbcm.controller.Fbcm_MyOrder_DetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DetailServlet</servlet-name>
+		<url-pattern>/font/DetailServlet.do</url-pattern>
+	</servlet-mapping>
+<!-- 儲值:前端會員處理作業 -->
+	<servlet>
+		<servlet-name>Fbcm_Trandaction</servlet-name>
+		<servlet-class>com.fbcm.controller.Fbcm_Trandaction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Fbcm_Trandaction</servlet-name>
+		<url-pattern>/font/Trandaction.do</url-pattern>
+	</servlet-mapping>
+	
+	  <servlet>
+		<servlet-name>DBGifReader13</servlet-name>
+		<servlet-class>com.member.model.DBGifReader13</servlet-class>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>DBGifReader13</servlet-name>
+		<url-pattern>/DBGifReader13</url-pattern>
+	</servlet-mapping>
+	
+	  <servlet>
+    <servlet-name>StoreLogin</servlet-name>
+    <servlet-class>com.store.controller.StoreLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreLogin</servlet-name>
+    <url-pattern>/storelogin.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>AnnServlet</servlet-name>
+    <servlet-class>com.ann.controller.AnnServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AnnServlet</servlet-name>
+    <url-pattern>/ann/ann.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>QaServlet</servlet-name>
+    <servlet-class>com.qa.controller.QaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QaServlet</servlet-name>
+    <url-pattern>/qa/qa.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AdServlet</servlet-name>
+    <servlet-class>com.ad.controller.AdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdServlet</servlet-name>
+    <url-pattern>/ad/ad.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ReadImage</servlet-name>
+    <servlet-class>com.ad.controller.ReadImage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadImage</servlet-name>
+    <url-pattern>/ad/ReadImage.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Back_Report_Servlet</servlet-name>
+    <servlet-class>com.report.controller.Back_Report_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Back_Report_Servlet</servlet-name>
+    <url-pattern>/Back/Report/Back_Report_Servlet.do</url-pattern>
+  </servlet-mapping>
+  
+  	<servlet>
+		<servlet-name>FBCMServlet</servlet-name>
+		<servlet-class>com.fbcm.controller.FbcmServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FBCMServlet</servlet-name>
+		<url-pattern>/font/Fbcm.do</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
